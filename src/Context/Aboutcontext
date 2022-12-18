@@ -1,0 +1,3 @@
+import React from "react";
+const Aboutcontext = React.createContext();
+export default Aboutcontext;

@@ -1,0 +1,102 @@
+.nav-link:hover {
+  color: #ff6633 !important;
+}
+.nav-link {
+  color: #bbb !important;
+  padding: 16px !important;
+  font-family: inherit;
+}
+.dropdown-toggle{
+    text-decoration: none !important;
+}
+.nav-link:focus {
+  color: #ff6633 !important;
+}
+.nav-link:active {
+  color: #ff6633 !important;
+}
+.navbar-toggler-icon {
+  border-radius: 3px;
+}
+.mainnav {
+  border-bottom: 0px solid #ffffff;
+  background-color: #383838;
+  background-color: #000000;
+     box-shadow: 0px 0px 9px 2px #ffffff47;
+}
+.mainnav {
+  width: 100%;
+  z-index: 999;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+}
+.language{
+  position: relative;
+  float: right;
+}
+.lanMenuIcon img{
+  width: 30px;
+  border: 1px solid #bbb;
+}
+.lanIcon{
+ width: 70%;
+}
+.lanIcon img{
+  width: 30px;
+  position: relative;
+  float: right;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.lanRow{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.lanText{
+  width: 30%;
+  float: left;
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.header-icons{
+  color: red !important;
+  position: relative;
+  z-index: 5000;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */

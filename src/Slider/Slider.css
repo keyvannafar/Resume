@@ -1,0 +1,10 @@
+.slider-image{
+   margin: auto;  
+}
+.slide{
+   margin-top: 20px !important;
+}
+.slider-main{
+   position: relative;
+   z-index: -1;
+}
