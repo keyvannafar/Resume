@@ -1,0 +1,74 @@
+.lefttwo{
+    width: 100%;
+    height: auto;
+    border-right: 1px solid #000;
+    border-radius: 0px;
+    top: 74px;  
+    padding: 10px;
+    z-index: 1;
+    color: #fff;
+    letter-spacing: 1px;
+    
+}
+p{
+    font-size: 14px;
+    font-family: arial;
+}
+.sidebar-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #383838 !important;
+    background-color: #bbb !important;
+    border: none !important;
+    position: relative;
+    z-index: 999;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px rgb(235, 235, 235);
+}
+.sidebar-button:hover{
+    background-color:#fff !important;
+    color: #000 !important;
+    font-weight: bold !important;
+}
+a{
+    text-decoration: none;
+}
+.sidebar-button:focus{
+    background-color:#ff6633;
+    font-weight: bold;
+    color: #fff !important;
+    box-shadow: none;
+}
+.sidebar-button span{
+        display: inline-block;
+    width: 77%;
+}
+.pointer{
+    float: left;
+    font-weight: bold;
+    color: #cc6633;
+    width: 10%;
+}
+
+h3{
+    color: #000;
+    font-family:  arial, serif;
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.prog-btn{
+    width: 70%;
+    margin-left: 15%;
+    cursor: pointer !important;
+}
+.focusButton{
+    background-color: #ff6633 !important;
+    color: #fff !important;
+}
+@media only screen and (max-width: 600px) {
+    .lefttwo{
+        border-right: none !important;
+    }
+}

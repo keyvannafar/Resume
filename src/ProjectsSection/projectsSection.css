@@ -1,0 +1,27 @@
+.projectsSection{
+    /* background-color: #333333; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.projectLaptopSize{
+    position: relative;
+    width: 50%;
+     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6600 100%);
+     border-right: 3px dashed #333333;
+}
+.projectMobileSize{
+    background-color: #ff6600 !important;
+     background: linear-gradient(90deg, #ff6600 0%, #fe9149 70%, #fbc29d 100%);;
+    /* border-radius: 50%; */
+    width: 50%;
+}
+.urltextOnHover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333333b7;
+    z-index: 1000;
+}
