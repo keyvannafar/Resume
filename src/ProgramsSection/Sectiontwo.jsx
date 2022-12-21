@@ -7,7 +7,7 @@ function Sectiontwo() {
   const Language = useSelector((state)=> state.LanChange.Language)
   return (
     <div className="topsectwo">
-      <img className="spacer-img" src={spacer} />
+      {/* <img className="spacer-img" src={spacer} /> */}
       <h2 className="text-center">
         {Language == false ? (
           <span>Programmiersprachen und Projekte</span>

@@ -22,6 +22,11 @@ import slide18 from "../../images/laptopProjects/hivadMob.png";
 import slide19 from "../../images/laptopProjects/resumeMob.png";
 import slide20 from "../../images/laptopProjects/animationMob.png";
 import slide21 from "../../images/laptopProjects/MultiinvestMob.png";
+import slide22 from "../../images/laptopProjects/phisiotherapyMob.png";
+import slide23 from "../../images/laptopProjects/inflationsRechner.png";
+import slide24 from "../../images/laptopProjects/goldrechnerMob.png";
+import slide25 from "../../images/laptopProjects/phisio-reactMob.png";
+import slide26 from "../../images/laptopProjects/phisio-react.png";
 import logoJavaScript from "../../images/logo/java-script.png";
 const dataProjects = [
   {
@@ -49,6 +54,18 @@ const dataProjects = [
     url1: "https://multi-invest-ffm.com/library/animation/",
     urltext1: "https:multi-invest-ffm.com/library/animation",
     image2: slide19,
+  },
+  {
+    id: 21,
+    image: slide1Logo,
+    title: "React js",
+    description: ``,
+    url: "https://multiinvest.de/library/goldrechner/",
+    urltext: "https:multiinvest.de /library/goldrechner",
+    image1: slide26,
+    url1: "https://multi-invest-ffm.com/library/animation/",
+    urltext1: "https:multi-invest-ffm.com/library/animation",
+    image2: slide25,
   },
   {
     id: 1,
@@ -94,7 +111,7 @@ const dataProjects = [
     image1: slide15,
     url1: "https://multi-invest-ffm.com/library/animation/",
     urltext1: "https://multi-invest-ffm.com/library/animation/",
-    image2: slide14,
+    image2: slide24,
   },
   {
     id: 6,
@@ -105,8 +122,8 @@ const dataProjects = [
     urltext: "https://multiinvest.de/ library/inflationsrechner",
     url1: "https://pardisnafarzadeh-clinic.com",
     urltext1: "https://pardisnafarzadeh-clinic.com",
-    image1: slide12,
-    image2: slide16,
+    image1: slide16,
+    image2: slide22,
   },
   {
     id: 7,
@@ -118,7 +135,7 @@ const dataProjects = [
     url1: "https://pardisnafarzadeh-clinic.com",
     urltext1: "https://pardisnafarzadeh-clinic.com",
     image1: slide12,
-    image2: slide16,
+    image2: slide23,
   },
 ];
 const dataProjectsEnglisch = [

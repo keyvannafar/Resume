@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #333333 !important;
+  background-color: #000 !important;
+  /* background-color: #fff !important; */
   perspective: 1;
   height: 100vh;
   /* position: relative; */
