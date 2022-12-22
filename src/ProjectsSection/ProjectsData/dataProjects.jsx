@@ -35,7 +35,7 @@ const dataProjects = [
     title: "React js",
     description: ``,
     url: "https://multiinvest.de/library/goldrechner/",
-    urltext: "https:multiinvest.de /library/goldrechner",
+    urltext: "https:hivadshop.com",
     image1: slide17,
     url1: "https://multi-invest-ffm.com/library/animation/",
     urltext1: "https:multi-invest-ffm.com/library/animation",
