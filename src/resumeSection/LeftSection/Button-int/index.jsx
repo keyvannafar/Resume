@@ -1,8 +1,5 @@
-import DataDes from "./data";
-import Sectionthreeleft from "../Sectionthreeleft";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
+import { useDispatch, useSelector } from "react-redux";
 function IntButton({ id, text, icon }) {
   const personalId = useSelector((state) => state.ButtonDes.personalId);
   const setPersonalId = useDispatch();

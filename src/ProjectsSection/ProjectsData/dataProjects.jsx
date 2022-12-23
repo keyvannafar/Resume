@@ -36,6 +36,9 @@ const dataProjects = [
     description: ``,
     url: "https://multiinvest.de/library/goldrechner/",
     urltext: "https:hivadshop.com",
+
+    desText1: "GitHub: https://github.com/keyvannafar/Paintings-Shop",
+
     image1: slide17,
     url1: "https://multi-invest-ffm.com/library/animation/",
     urltext1: "https:multi-invest-ffm.com/library/animation",
@@ -49,10 +52,11 @@ const dataProjects = [
     title: "React js",
     description: ``,
     url: "https://multiinvest.de/library/goldrechner/",
-    urltext: "https:multiinvest.de /library/goldrechner",
+    urltext: "https://Keyvannafarzadeh.com",
     image1: slide13,
+    desText1: "GitHub: https://github.com/keyvannafar/Resume",
     url1: "https://multi-invest-ffm.com/library/animation/",
-    urltext1: "https:multi-invest-ffm.com/library/animation",
+    urltext1: "https://Keyvannafarzadeh@yahoo.com",
     image2: slide19,
   },
   {

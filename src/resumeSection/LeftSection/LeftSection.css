@@ -1,0 +1,118 @@
+.leftthree{
+    width: 100%;
+    height: auto;
+    border-right: 2px solid #bbb;
+    position: sticky;
+    top: 70px;   
+    padding: 10px;
+}
+.btn-int{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 5px;
+    cursor: pointer !important;
+    border: none !important;
+    box-shadow: 0px 0px 5px 1px #bbb;
+}
+.image-int{
+    width: 50% !important;
+    margin-left: 25% !important;
+    margin-bottom: 20px;
+    border-radius: 50% !important;
+    border: 3px solid #bbb;
+}
+.leftthree button{
+    background-color: #333333;
+    color: #bbb;
+    border: none;
+    /* box-shadow: 0px 0px 1px 2px #bbb; */
+    /* display: flex; */
+}
+.leftthree button:hover{  
+    background-color: #333333 !important;   
+}
+.leftthree button:focus{  
+    background-color: #333333 !important; 
+    border: 1px solid #bbb;
+    box-shadow: none !important;
+}
+
+/* ############# icons-about ######### */
+.icons{
+    width: 10%;
+}
+.about-color{
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);   
+}
+.about{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);  
+}
+.work-text:hover .work{
+   display: none;
+}
+.work-text:hover .work-color{
+   display: block;
+}
+.work-text:focus .work{
+   display: none;
+}
+.work-text:focus .work-color{
+   display: block;
+}
+.work{
+   position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%); 
+}
+.work-color{
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%); 
+}
+.cv-text:hover .cv{
+   display: none;
+}
+.cv-text:hover .cv-color{
+   display: block;
+}
+.cv-text:focus .cv{
+   display: none;
+}
+.cv-text:focus .cv-color{
+   display: block;
+}
+.cv{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%); 
+}
+.cv-color{
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%); 
+}
+.focus{
+   color: #ff6633 !important;
+   border: none;
+}
+/* .focus span{
+   border-bottom: 1px solid #ff6633 !important;
+} */
+@media only screen and (max-width: 600px) {
+   .leftthree{
+    border-right: none !important;
+   }
+}

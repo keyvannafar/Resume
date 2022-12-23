@@ -1,6 +1,6 @@
-import "./Sectionthree.css";
-import Sectionthreeleft from "./Sectionthreeleft/Sectionthreeleft"
-import Sectionthreeright from "./Sectionthreeright/Sectionthreeright";
+import "./resumeSection.css";
+import LeftSection from "./LeftSection"
+import RightSection from "./RightSection";
 import { useSelector } from "react-redux/es/exports";
 function SectionResume() {
   const Language = useSelector((state) => state.LanChange.Language);
@@ -11,10 +11,10 @@ function SectionResume() {
       </h2>
       <div className="container d-flex sectionthree">
         <div className="threeleft">
-          <Sectionthreeleft />
+          <LeftSection />
         </div>
         <div className="threeright">
-          <Sectionthreeright />
+          <RightSection />
         </div>
       </div>
     </div>
