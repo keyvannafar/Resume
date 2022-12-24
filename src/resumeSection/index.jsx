@@ -6,8 +6,12 @@ function SectionResume() {
   const Language = useSelector((state) => state.LanChange.Language);
   return (
     <div className="full-width" id="about">
-      <h2 className="text-center about-header">
-        {Language == false ? <span>Über mich</span> : <span>About me</span>}
+      <h2 className="text-center about-header mb-5">
+        {Language == false ? (
+          <span className="text-black">Über mich</span>
+        ) : (
+          <span className="text-black">About me</span>
+        )}
       </h2>
       <div className="container d-flex sectionthree">
         <div className="threeleft">

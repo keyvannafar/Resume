@@ -1,0 +1,90 @@
+.cv-titles{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.title-lines{
+    background-color: #ff6633;
+    color: #ff6633;
+    width:33%;
+}
+.cv-title{
+    color: #fff;
+}
+.address-part{
+    width: 70%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.address-part h4{
+    width: 100%;
+}
+.img-cv{
+    width: 30%;
+}
+.img-cv img{
+    width: 40%;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.address-part p{
+    color: #fff;
+}
+.personal-left{
+    width: 45%;
+    color: #fff;
+    letter-spacing: 0.7px;
+}
+.personal-right{
+    width: 55%;
+    color: #fff;
+    color: #bbb;
+    letter-spacing: 0.7px;
+}
+.mainDta{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-int{
+    width: 100%;
+}
+.spacer{
+    height: 20px;
+}
+@media only screen and (min-width: 600px) {
+.cv-leftbox{
+    width: 40%;
+    color: #fff;
+    color: #bbb;
+    letter-spacing: 0.7px;
+}
+.cv-righttbox{
+    width: 60%;
+    color: #fff !important;
+    letter-spacing: 0.7px;
+}
+}
+@media only screen and (max-width: 600px) {
+.cv-leftbox{
+    width: 100% !important;
+    color: #fff;
+    color: #bbb;
+    letter-spacing: 0.7px;
+}
+.cv-righttbox{
+    width: 100% !important;
+    color: #fff !important;
+}
+.personal-left{
+    width: 100% !important;
+}
+.personal-right{
+    width: 100% !important;
+}
+.cv-main{
+    margin-top: 30px;
+}
+}

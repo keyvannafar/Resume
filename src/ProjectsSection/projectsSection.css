@@ -7,7 +7,7 @@
 .projectLaptopSize{
     position: relative;
     width: 50%;
-     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6600 100%);
+     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6633 100%);
      border-right: 1px solid #333333;
      background-color: #fff;
 }
@@ -15,7 +15,7 @@
     position: relative;
    background-color: #fff;
    border-left: 1px solid #333333;
-     background: linear-gradient(90deg, #ff6600 0%, #fe9149 70%, #fbc29d 100%);;
+     background: linear-gradient(90deg, #ff6633 0%, #fe9149 70%, #fbc29d 100%);
     /* border-radius: 50%; */
     width: 50%;
 }

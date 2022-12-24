@@ -1,7 +1,16 @@
-import React from 'react'
-
-export default function RightSecton() {
+import "./RightSection.css";
+import { useSelector } from "react-redux";
+import CV from "./CV"
+function Sectionthreeright() {
+  
   return (
-    <div>Sectionthreeright</div>
-  )
+    <>
+      <div id="lebenslauf"></div>
+      <div className="rightthree ">
+        <CV />
+      </div>
+    </>
+  );
 }
+
+export default Sectionthreeright;
