@@ -9,7 +9,7 @@
   z-index: 2;
   height: auto;
   background-color: #000;
-  /* box-shadow: 0px 0px 35px 5px #b3b0b0; */
+  box-shadow: 0px 0px 17px 1px #e3e1e1;
 }
 #about {
   position: relative;
@@ -30,7 +30,6 @@
   position: relative;
   padding-bottom: 90px;
   z-index: 999;
-  background-color: #ff6633 !important;
   background: linear-gradient(90deg, #ff6633 0%, #fe9149 70%, #fbc29d 100%);;
 }
 @media only screen and (max-width: 600px) {

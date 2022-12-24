@@ -1,7 +1,7 @@
 
 import "./Navbar.css";
-import De from "../images/languageIcon/de.jpg";
-import En from "../images/languageIcon/en.jpg";
+import De from "../../images/languageIcon/de.jpg";
+import En from "../../images/languageIcon/en.jpg";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";

@@ -1,0 +1,7 @@
+.footerNav span{
+    color: red !important;
+}
+.footer{
+    z-index: 999;
+    position: relative;
+}

@@ -21,8 +21,8 @@
 .mainnav {
   border-bottom: 0px solid #ffffff;
   background-color: #383838;
-  background-color: #000000;
-     box-shadow: 0px 0px 9px 2px #ffffff47;
+  background-color: #000000cd;
+  box-shadow: 0px 0px 9px 2px #ffffff47;
 }
 .mainnav {
   width: 100%;
@@ -62,7 +62,7 @@
 }
 
 .dropbtn {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.763);
   color: white;
   padding: 16px;
   font-size: 16px;
