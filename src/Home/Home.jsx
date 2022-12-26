@@ -7,15 +7,16 @@ import Projects from "../ProjectsSection";
 import { Provider } from "react-redux/es/exports";
 import SectionResume from "../resumeSection";
 import ProgramsSection from "../ProgramsSection/Sectiontwo";
+import Parallax from "../Parralax";
 function Home() {
   const [Pro, setPro] = useState(1);
   return (
     <>
       <Procontext.Provider value={[Pro, setPro]}>
         <Slidersection />
-
         <ProgramsSection />
         <SectionResume />
+        <Parallax />
         <Projects />
       </Procontext.Provider>
     </>

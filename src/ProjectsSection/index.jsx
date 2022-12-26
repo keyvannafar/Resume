@@ -5,11 +5,13 @@ function Projects() {
     
   return (
     <>
-      <h2 className="text-center">Einige Projekte und Erfahrungen</h2>
-      <div className="container">
-        {dataProjects.map((item) => (
-          <ProjectsData key={item.id} {...item} />
-        ))}
+      <div className="projectSectionMain">
+        <h2 className="text-center">Einige Projekte und Erfahrungen</h2>
+        <div className="container">
+          {dataProjects.map((item) => (
+            <ProjectsData key={item.id} {...item} />
+          ))}
+        </div>
       </div>
     </>
   );

@@ -4,6 +4,12 @@
     width: 100%;
     cursor: pointer;
 }
+.projectSectionMain{
+    background-color: #000;
+    z-index: 1 !important;
+    position: relative;
+    margin-top: 50vh;
+}
 .projectLaptopSize{
     position: relative;
     width: 50%;
@@ -35,7 +41,7 @@ img{
 }
 .projectsSection:hover .urltextOnHover{
     display: block;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 .urltext{
     position: absolute;

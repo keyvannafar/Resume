@@ -13,12 +13,14 @@ function SectionResume() {
           <span className="text-black">About me</span>
         )}
       </h2>
-      <div className="container d-flex sectionthree">
-        <div className="threeleft">
-          <LeftSection />
-        </div>
-        <div className="threeright">
-          <RightSection />
+      <div>
+        <div className="container d-flex sectionthree">
+          <div className="threeleft">
+            <LeftSection />
+          </div>
+          <div className="threeright">
+            <RightSection />
+          </div>
         </div>
       </div>
     </div>

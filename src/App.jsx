@@ -9,6 +9,7 @@ import "animate.css";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import Footer from "./layout/Footer/Footer";
+import Contact from "./Contact";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
           </Routes>
+          <Contact />
           <Footer />
         </Provider>
       </BrowserRouter>
