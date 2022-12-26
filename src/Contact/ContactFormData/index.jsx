@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../../Contact/Contact.css";
-
+import contactValidation from "../../Validation/Contact";
 
 
 function FormContact({
@@ -25,7 +25,26 @@ function FormContact({
     text: "",
   });
 
-  
+  const sendContactInfo = (e) => {
+    e.preventDefault();
+
+    const result = contactValidation(contactInfo);
+
+    if (result.length) {
+      setErrors(result);
+    } else {
+      setErrors([]);
+
+      fetch("http://localhost:5000/contact", {
+        method: "post",
+        body: JSON.stringify(contactInfo),
+        headers:{"Content-Type": "Application/json"}
+      })
+        .then((res) => res.json())
+        .then((data) => alert(data.message))
+        .catch((error) => alert(error)); 
+    }
+  };
 
   return (
     <>
@@ -35,7 +54,9 @@ function FormContact({
             {title}
           </h2>
 
-          <p className="text-center w-responsive mx-auto mb-5">{description}</p>
+          <p className="text-center w-responsive mx-auto mb-5">
+            {description}
+          </p>
 
           <div className="row">
             <div className="col-md-9 mb-md-0 mb-5">
@@ -44,7 +65,7 @@ function FormContact({
                 name="contact-form"
                 //action="mailto:kayvannafarzadeh@yahoo.com"
                 method="POST"
-          
+                onSubmit={sendContactInfo}
               >
                 <div className="row">
                   <div className="col-md-6">
@@ -191,14 +212,12 @@ function FormContact({
 
                 <li>
                   <i className="fas fa-phone mt-4 fa-2x"></i>
-                  <p>
-                    <i class="bi bi-whatsapp "></i> {deutschTel}
-                  </p>
+                  <p>{/* <i class="bi bi-whatsapp "></i> {deutschTel} */}</p>
                   <p>
                     <i class="bi bi-telephone"></i> {deutschTel}
                   </p>
                   <p>
-                    <i class="bi bi-whatsapp"></i> {iranTel}
+                    <i class="bi bi-telephone"></i> {iranTel}
                   </p>
                 </li>
 

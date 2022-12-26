@@ -4,7 +4,10 @@ export default function Parallax() {
   return (
     <div className="parallax">
       <div className="parallaxBlur">
-        <button className="parallax-button text-center">Documents</button>
+        <h3 className="parallax-button text-center para">
+          
+        </h3>
+        <button className="parallax-button"></button>
       </div>
     </div>
   );
