@@ -8,7 +8,6 @@
     background-color: #000;
     z-index: 1 !important;
     position: relative;
-    margin-top: 50vh;
 }
 .projectLaptopSize{
     position: relative;
@@ -16,7 +15,14 @@
      background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6633 100%);
      border-right: 1px solid #333333;
      background-color: #fff;
+     min-height: 150px;
 }
+/* .projectLaptopSize img{
+    animation-delay: 0.5s;
+}
+.projectMobileSize img{
+    animation-delay: 0.5s;
+} */
 .projectMobileSize{
     position: relative;
    background-color: #fff;
@@ -24,6 +30,7 @@
      background: linear-gradient(90deg, #ff6633 0%, #fe9149 70%, #fbc29d 100%);
     /* border-radius: 50%; */
     width: 50%;
+    min-height: 150px;
 }
 img{
     width: 70%;
