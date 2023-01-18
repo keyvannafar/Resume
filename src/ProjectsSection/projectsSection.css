@@ -17,12 +17,12 @@
      background-color: #fff;
      min-height: 150px;
 }
-/* .projectLaptopSize img{
+.projectLaptopSize img{
     animation-delay: 0.5s;
 }
 .projectMobileSize img{
-    animation-delay: 0.5s;
-} */
+    animation-delay: 0.7s;
+}
 .projectMobileSize{
     position: relative;
    background-color: #fff;

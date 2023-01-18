@@ -1,6 +1,6 @@
-
+import LazyLoad from "react-lazy-load";
 import { useDispatch, useSelector } from "react-redux";
-function IntButton({ id, text, icon }) {
+function IntButton({ id, text, icon, animDurate }) {
   const personalId = useSelector((state) => state.ButtonDes.personalId);
   const setPersonalId = useDispatch();
   function personal() {
@@ -17,17 +17,19 @@ function IntButton({ id, text, icon }) {
   return (
     <div>
       <a href="#lebenslauf">
-        <button
-          className={`btn btn-primary btn-int about-text position-relative mt-2 ${
-            personalId == id ? `focus` : ""
-          }`}
-          onClick={personal}
-        >
-          <span>
-            {icon}&nbsp;
-            {text}
-          </span>
-        </button>
+        <LazyLoad>
+          <button
+            className={`btn btn-primary btn-int about-text position-relative mt-2 animate__animated animate__lightSpeedInLeft animate__delay-${animDurate} ${
+              personalId == id ? `focus` : ""
+            }`}
+            onClick={personal}
+          >
+            <span>
+              {icon}&nbsp;
+              {text}
+            </span>
+          </button>
+        </LazyLoad>
       </a>
     </div>
   );

@@ -4,7 +4,7 @@ import LazyLoad from "react-lazy-load";
 function ProjectsData({ image1, image2, title, image3, image4, urltext, desText, desText1, desText2 }) {
   return (
     <>
-      <div className="container mb-2">
+      <div className="container mb-2 ">
         {/* <h3 className="projectsTitle">{title}</h3> */}
         <div className="container projectsSection">
           <div className="projectLaptopSize text-center">
