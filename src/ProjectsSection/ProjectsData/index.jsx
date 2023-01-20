@@ -4,9 +4,8 @@ import LazyLoad from "react-lazy-load";
 function ProjectsData({ image1, image2, title, image3, image4, urltext, desText, desText1, desText2 }) {
   return (
     <>
-      <div className="container mb-2 ">
-        {/* <h3 className="projectsTitle">{title}</h3> */}
-        <div className="container projectsSection">
+      <div className=" mb-2 ">
+        <div className=" container projectsSection">
           <div className="projectLaptopSize text-center">
             <LazyLoad threshold={0.95} offset={-150}>
               <img
@@ -46,14 +45,6 @@ function ProjectsData({ image1, image2, title, image3, image4, urltext, desText,
             </div>
           </div>
         </div>
-        {/* <div className="container projectsSection">
-          <div className="projectLaptopSize text-center">
-            <img src={image3} />
-          </div>
-          <div className="projectMobileSize text-center">
-            <img src={image4} />
-          </div>
-        </div> */}
       </div>
     </>
   );

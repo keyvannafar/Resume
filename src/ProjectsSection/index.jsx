@@ -8,7 +8,7 @@ function Projects() {
     <>
       <div className="projectSectionMain">
         <h2 className="text-center">Einige Projekte und Erfahrungen</h2>
-        <div className="container">
+        <div className="">
           {dataProjects.map((item) => (
             <ProjectsData key={item.id} {...item} />
           ))}
