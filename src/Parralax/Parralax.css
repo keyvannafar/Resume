@@ -1,9 +1,9 @@
 .parallax{
     background-image: url(../images/Parallax/Parallax1.jpg);
     background-color: #fff;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
-    background-attachment: fixed;
+    position: fixed;
     bottom: 0;
 }
 .parallax-button{

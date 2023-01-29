@@ -2,7 +2,6 @@ import "./resumeSection.css";
 import LeftSection from "./LeftSection"
 import RightSection from "./RightSection";
 import { useSelector } from "react-redux/es/exports";
-import LazyLoad from "react-lazy-load";
 function SectionResume() {
   const Language = useSelector((state) => state.LanChange.Language);
   return (
@@ -16,9 +15,9 @@ function SectionResume() {
       </h2>
       <div>
         <div className="container d-flex sectionthree">
-            <div className="threeleft">
-              <LeftSection />
-            </div>{" "}
+          <div className="threeleft">
+            <LeftSection />
+          </div>
           <div className="threeright">
             <RightSection />
           </div>
