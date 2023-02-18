@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
 import "./../../ProjectsSection/projectsSection.css";
 
 function ProjectsData({ image1, image2, title, image3, image4, urltext, desText, desText1, desText2 }) {
@@ -8,7 +9,12 @@ function ProjectsData({ image1, image2, title, image3, image4, urltext, desText,
         {/* <h3 className="projectsTitle">{title}</h3> */}
         <div className="container projectsSection">
           <div className="projectLaptopSize text-center">
-            <img className="animate__animated animate__flipInY" src={image1} />
+            <LazyLoad offset={-150}>
+              <img
+                className="animate__animated animate__flipInY"
+                src={image1}
+              />
+            </LazyLoad>
             <span></span>
             <div className="urltextOnHover animate__animated animate__zoomIn">
               <h3 className="urltext text-700">{title}</h3>
@@ -16,7 +22,12 @@ function ProjectsData({ image1, image2, title, image3, image4, urltext, desText,
           </div>
 
           <div className="projectMobileSize text-center">
-            <img className="animate__animated animate__flipInY" src={image2} />
+            <LazyLoad offset={-150}>
+              <img
+                className="animate__animated animate__flipInY"
+                src={image2}
+              />
+            </LazyLoad>
             <div className="urltextOnHover animate__animated animate__zoomIn">
               <div className="urltext">
                 <span>{desText}</span>
