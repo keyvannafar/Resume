@@ -10,7 +10,8 @@
   position: relative;
 }
 a{
-  color: #fff;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 img {
   width: 70%;
