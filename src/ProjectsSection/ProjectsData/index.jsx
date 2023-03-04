@@ -2,11 +2,20 @@ import React from "react";
 import LazyLoad from "react-lazyload";
 import "./../../ProjectsSection/projectsSection.css";
 
-function ProjectsData({ image1, image2, title, image3, image4, urltext, desText, desText1, desText2 }) {
+function ProjectsData({
+  image1,
+  image2,
+  title,
+  urltext,
+  desText,
+  desText1,
+  desText2,
+  gitUrl,
+  url
+}) {
   return (
     <>
       <div className="container mb-2">
-        {/* <h3 className="projectsTitle">{title}</h3> */}
         <div className="container projectsSection">
           <div className="projectLaptopSize text-center">
             <LazyLoad offset={-150}>
@@ -20,7 +29,6 @@ function ProjectsData({ image1, image2, title, image3, image4, urltext, desText,
               <h3 className="urltext text-700">{title}</h3>
             </div>
           </div>
-
           <div className="projectMobileSize text-center">
             <LazyLoad offset={-150}>
               <img
@@ -33,28 +41,24 @@ function ProjectsData({ image1, image2, title, image3, image4, urltext, desText,
                 <span>{desText}</span>
                 <br />
                 <span>
-                  <i class="bi bi-github"></i>
-                  {desText1}
+                  <a href={gitUrl}>
+                    <i class="bi bi-github"></i>
+                    {desText1}
+                  </a>
                 </span>
                 <br />
                 <span>{desText2}</span>
                 <br />
                 <span>
-                  <i class="bi bi-link-45deg"></i>
-                  {urltext}
+                  <a href={url}>
+                    <i class="bi bi-link-45deg"></i>
+                    {urltext}
+                  </a>
                 </span>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="container projectsSection">
-          <div className="projectLaptopSize text-center">
-            <img src={image3} />
-          </div>
-          <div className="projectMobileSize text-center">
-            <img src={image4} />
-          </div>
-        </div> */}
       </div>
     </>
   );

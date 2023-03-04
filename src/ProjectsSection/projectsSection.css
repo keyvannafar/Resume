@@ -8,9 +8,10 @@
   background-color: #000;
   z-index: 1 !important;
   position: relative;
-  margin-top: 50vh;
 }
-
+a{
+  color: #fff;
+}
 img {
   width: 70%;
 }
@@ -21,7 +22,7 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.646);
-  z-index: 1000;
+  z-index: 999;
   display: none;
 }
 .projectsSection:hover .urltextOnHover {
@@ -48,10 +49,13 @@ h3 {
 }
 @media screen and (max-width: 600px) {
   .projectLaptopSize {
+    position: relative;
     min-height: 50px;
     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6633 100%);
   }
   .projectMobileSize {
+    font-size: 10px;
+    position: relative;
     min-height: 50px;
     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6633 100%);
   }
