@@ -13,6 +13,9 @@
 }
 #about {
   position: relative;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  overflow-x: hidden;
   z-index: 3;
 }
 .threeleft {

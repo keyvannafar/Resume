@@ -1,5 +1,7 @@
 .slider-image{
    margin: auto;  
+   border-bottom-right-radius: 270px ;
+   border-top-left-radius: 20px;
 }
 .slide{
    margin-top: 20px !important;

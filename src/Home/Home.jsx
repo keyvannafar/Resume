@@ -14,7 +14,7 @@ function Home() {
     <>
       <Procontext.Provider value={[Pro, setPro]}>
         <Slidersection />
-        <ProgramsSection />
+        {/* <ProgramsSection /> */}
         <SectionResume />
         <Parallax />
         <Projects />

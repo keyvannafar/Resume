@@ -41,7 +41,7 @@ function ProjectsData({
                 <span>{desText}</span>
                 <br />
                 <span>
-                  <a href={gitUrl}>
+                  <a href={gitUrl} target="_blank">
                     <i class="bi bi-github"></i>
                     {desText1}
                   </a>
@@ -50,7 +50,7 @@ function ProjectsData({
                 <span>{desText2}</span>
                 <br />
                 <span>
-                  <a href={url}>
+                  <a href={url} target="_blank">
                     <i class="bi bi-link-45deg"></i>
                     {urltext}
                   </a>

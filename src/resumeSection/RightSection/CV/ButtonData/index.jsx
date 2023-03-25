@@ -19,6 +19,9 @@ function PersonalData({
   dateLastJob,
   lastJobTitle,
   lastJobCompany,
+  dateActiveJob,
+  activeJobTitle,
+  activeJobCompany,
   lastJobTask1,
   lastJobTask2,
   lastJobTask3,
@@ -110,6 +113,18 @@ function PersonalData({
             </div>
             <div className="spacer"></div>
             <div className="cv-titles">
+              <div className="personal-left">
+                <p className="personal-left">{dateActiveJob} </p>
+              </div>
+              <div className="personal-right">
+                <p className="text-white">{activeJobTitle}</p>
+              </div>
+              <div className="personal-left">
+                <p> </p>
+              </div>
+              <div className="personal-right">
+                <p>{activeJobCompany}</p>
+              </div>
               <div className="personal-left">
                 <p className="personal-left">{dateLastJob} </p>
               </div>

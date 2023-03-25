@@ -22,7 +22,10 @@ const personalData = [
   {
     id: 2,
     title: "Beruflicher Werdegang",
-    dateLastJob: "02/2021 – 02/2022",
+    dateActiveJob: "10/2022 – jetzt",
+    activeJobTitle: "Web-Designer",
+    activeJobCompany: "Firma: Arico-Machine",
+    dateLastJob: "02/2021 – 03/2022",
     lastJobTitle: "Web-Designer",
     lastJobCompany: "Firma: Multi-Invest Co.(Frankfurt am Main)",
     lastJobTask1: "• Frontend Design (Joomla, Wordpress, HTML, CSS,JavaScript)",
