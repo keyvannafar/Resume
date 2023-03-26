@@ -51,13 +51,13 @@ h3 {
 @media screen and (max-width: 600px) {
   .projectLaptopSize {
     position: relative;
-    min-height: 50px;
+    /* min-height: 50px; */
     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6633 100%);
   }
   .projectMobileSize {
     font-size: 10px;
     position: relative;
-    min-height: 50px;
+    /* min-height: 50px; */
     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6633 100%);
   }
 }
@@ -68,7 +68,7 @@ h3 {
     background: linear-gradient(90deg, #fbc29d 0%, #fe9149 70%, #ff6633 100%);
     border-right: 1px solid #333333;
     background-color: #fff;
-    min-height: 150px;
+    /* min-height: 150px; */
   }
   .projectMobileSize {
     position: relative;
@@ -76,6 +76,6 @@ h3 {
     border-left: 1px solid #333333;
     background: linear-gradient(90deg, #ff6633 0%, #fe9149 70%, #fbc29d 100%);
     width: 50%;
-    min-height: 150px;
+    /* min-height: 150px; */
   }
 }

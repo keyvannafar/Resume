@@ -6,6 +6,9 @@
    z-index: 2;
    background-color: #fff !important; 
 }
+/* #contact-form{
+    width: 50%;
+} */
 .contact-form input{
     border-radius: 0px;
     border: none;
@@ -24,6 +27,8 @@
 }
 #contact{
     background-color: #fff !important;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
 }
 .fieldWarning{
     color: #ff6633 !important;

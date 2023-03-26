@@ -5,10 +5,12 @@
     position: relative;
     background-color: #000;
     padding: 30px 0px;
-    box-shadow: 5px 5px 35px 20px #383838;
-    /* position: sticky; */
-    /* top: 72px; */
+    /* box-shadow: 5px 5px 35px 20px #383838; */
     z-index: 1;
+    border-bottom-right-radius: 0px;
+}
+.slider-bg{
+  background-color: #fbc29d;
 }
 .slider-left{
     width: 50%;

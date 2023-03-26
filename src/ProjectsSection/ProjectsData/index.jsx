@@ -30,7 +30,7 @@ function ProjectsData({
             </div>
           </div>
           <div className="projectMobileSize text-center">
-            <LazyLoad offset={-150}>
+            <LazyLoad>
               <img
                 className="animate__animated animate__flipInY"
                 src={image2}

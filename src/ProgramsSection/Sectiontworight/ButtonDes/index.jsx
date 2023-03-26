@@ -23,18 +23,6 @@ function Datadescription({
           <br />
           <p>{parse(description)}</p>
           <div className="righttwo">
-            {/* <div className="project-img">
-              <a href={url}>
-                <img src={image1} />
-                <span>{urltext}</span>
-              </a>
-            </div> */}
-            {/* <div className="project-img">
-              <a href={urltext1}>
-                <img src={image2} />
-                <span>{url1}</span>
-              </a>
-            </div> */}
           </div>
         </div>
       </div>
