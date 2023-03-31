@@ -4,4 +4,28 @@
 .footer{
     z-index: 999;
     position: relative;
+    margin-top: 190px !important;
+    border-top: 3px solid #ff6633;
+    padding-top: 50px !important;
 }
+.footer-Nav a{
+    color: rgb(193, 193, 193) !important;
+    padding:0px 50px 0px 0px !important;
+    display: inline-block !important;
+    display:inline-block
+    }
+     li span{
+         color: rgb(193, 193, 193) !important;
+    }
+    h5{
+        color: #ff6633 !important
+    }
+    .copyright{
+        color: rgb(141, 142, 142);
+    }
+    i:hover{
+        color: #ff6633;
+        
+    }
+    
+    

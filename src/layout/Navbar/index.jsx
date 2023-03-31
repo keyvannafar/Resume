@@ -21,10 +21,13 @@ function Navbar() {
       ? setLanguage({ type: "Englisch" })
       : setLanguage({ type: "Deutsch" });
   }
+  
   return (
     <>
       <div id="home"></div>
-      <nav className="navbar mainnav navbar-expand-lg navbar-light">
+      <nav
+        className="navbar mainnav navbar-expand-lg navbar-light"
+      >
         <div className="container-fluid container">
           <button
             className="navbar-toggler"

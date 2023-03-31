@@ -11,16 +11,16 @@ function ProjectsData({
   desText1,
   desText2,
   gitUrl,
-  url
+  url,
 }) {
   return (
     <>
       <div className="container mb-2">
         <div className="container projectsSection">
           <div className="projectLaptopSize text-center">
-            <LazyLoad offset={-150}>
+            <LazyLoad offset={0}>
               <img
-                className="animate__animated animate__flipInY"
+                className="animate__animated animate__fadeInLeftBig"
                 src={image1}
               />
             </LazyLoad>
@@ -30,29 +30,35 @@ function ProjectsData({
             </div>
           </div>
           <div className="projectMobileSize text-center">
-            <LazyLoad>
+            <LazyLoad offset={0}>
               <img
-                className="animate__animated animate__flipInY"
+                className="animate__animated animate__fadeInRightBig"
                 src={image2}
               />
             </LazyLoad>
             <div className="urltextOnHover animate__animated animate__zoomIn">
               <div className="urltext">
-                <span>{desText}</span>
-                <br />
-                <span>
-                  <a href={gitUrl} target="_blank">
-                    <i class="bi bi-github"></i>
-                    {desText1}
-                  </a>
-                </span>
-                <br />
+                <a href={gitUrl} target="_blank">
+                  {desText1 == "" ? (
+                    ""
+                  ) : (
+                    <button className="p-1">
+                      <i class="bi bi-github"></i> {desText1}
+                    </button>
+                  )}
+                </a>
+
                 <span>{desText2}</span>
-                <br />
+
                 <span>
                   <a href={url} target="_blank">
-                    <i class="bi bi-link-45deg"></i>
-                    {urltext}
+                    {urltext == "" ? (
+                      ""
+                    ) : (
+                      <button className="p-1">
+                        <i class="bi bi-link-45deg"></i> {urltext}
+                      </button>
+                    )}
                   </a>
                 </span>
               </div>

@@ -12,7 +12,10 @@ function LeftSection() {
   return (
     <>
       <div className="leftthree">
-        <img className="image-int" src={slide2} />
+        {/* <img className="image-int" src={slide2} /> */}
+        <p className="text-center text-white">
+          MENU <i class="bi bi-arrow-down"></i>
+        </p>
         {Language == false
           ? DataDes.map((item) => <IntButton key={item.id} {...item} />)
           : DataDesEnglisch.map((item) => (

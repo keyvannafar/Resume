@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Home from "./Home/Home";
 import Navbar from "./layout/Navbar"
@@ -19,7 +19,6 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
           </Routes>
-          <Contact />
           <Footer />
         </Provider>
       </BrowserRouter>

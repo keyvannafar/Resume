@@ -2,8 +2,7 @@
    {
      id: 1,
      title: "Contact",
-     description:
-       "Do you have any questions? Please do not hesitate to contact usdirectly.",
+     description: "Note: the contact form is currently not working",
      name: " Your name",
      email: "Your email",
      subject: "Subject",
@@ -14,14 +13,12 @@
      iranTel: "+ 98 913 104 2684",
      emailPrivate: "Kayvannafarzadeh @yahoo.com",
    },
-   
  ];
  const formDataDeutsch = [
    {
      id: 1,
      title: "Kontakt",
-     description:
-       "Haben Sie irgendwelche Fragen? Bitte zögern Sie nicht, uns direkt zu kontaktieren.",
+     description: "Hinweis: Derzeit funktioniert das Kontaktformular nicht",
      name: " Ihren Namen",
      email: "E-Mail",
      subject: "Thema",
