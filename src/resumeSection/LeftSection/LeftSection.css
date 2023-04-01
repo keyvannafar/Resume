@@ -108,9 +108,6 @@
    color: #ff6633 !important;
    border: none;
 }
-/* .focus span{
-   border-bottom: 1px solid #ff6633 !important;
-} */
 @media only screen and (max-width: 600px) {
    .leftthree{
     border-right: none !important;

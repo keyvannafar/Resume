@@ -1,6 +1,5 @@
-
 // import "../Navbar.css";
-import "./Footer.css"
+import "./Footer.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -20,15 +19,12 @@ function NavbarText({ text, path, icon }) {
   }
   return (
     <>
-      <div id="back-to-top"></div>
       <div className="footer-Nav">
-        <li className="nav-item">
-          
-            {" "}
-            <a className="nav-link p-0" aria-current="page" href={path}>
-              {icon} {text}
-            </a>
-          
+        <li className="">
+          {" "}
+          <a className="nav-link p-0" aria-current="page" href={path}>
+            {icon} {text}
+          </a>
         </li>
       </div>
     </>

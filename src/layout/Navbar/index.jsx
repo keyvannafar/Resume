@@ -1,8 +1,7 @@
-
 import "./Navbar.css";
 import De from "../../images/languageIcon/de.jpg";
 import En from "../../images/languageIcon/en.jpg";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -14,19 +13,31 @@ function Navbar() {
   const setLanguage = useDispatch();
   const setId = useDispatch();
   const [Lan, setLan] = useState(false);
+  const setScroll = useDispatch()
   const Language = useSelector((state) => state.LanChange.Language);
+  const Scroll = useSelector((state) => state.OnScroll.Scroll);
   function toggleLan() {
     setLan(!Lan);
     Lan == false
       ? setLanguage({ type: "Englisch" })
       : setLanguage({ type: "Deutsch" });
   }
-  
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setScroll({ type: "menuOnScroll" });
+      }  else {
+        setScroll({ type: "zeroScroll" });
+      }
+    });
+  }, []);
   return (
     <>
       <div id="home"></div>
       <nav
-        className="navbar mainnav navbar-expand-lg navbar-light"
+        className={`navbar navbar-expand-lg navbar-light ${
+          Scroll == 0 ? `mainnav` : Scroll == 1 ? "mainnavOnScroll" : "mainnav"
+        }`}
       >
         <div className="container-fluid container">
           <button
@@ -87,12 +98,15 @@ function Navbar() {
             </div>
           </div>
           <a
-            className="text-white"
+            className={`${Scroll == 1 ? `headerIconOnScroll` : "headerIcon"}`}
             href="https://www.linkedin.com/in/mohammad-mehdi-nafarzadeh-028917240/"
           >
             <i class="bi bi-linkedin nav-link px-2 text-muted"></i>
           </a>
-          <a className="text-white" href="https://github.com/keyvannafar">
+          <a
+            className={`${Scroll == 1 ? `headerIconOnScroll` : "headerIcon"}`}
+            href="https://github.com/keyvannafar"
+          >
             <i class="bi bi-github nav-link px-2 text-muted"></i>
           </a>
         </div>

@@ -1,6 +1,11 @@
 .footerNav span{
     color: red !important;
 }
+.nav-item li {
+   display:inline-block  !important;
+   width: 100% !important;
+   color: red !important;
+}
 .footer{
     z-index: 999;
     position: relative;
@@ -10,9 +15,9 @@
 }
 .footer-Nav a{
     color: rgb(193, 193, 193) !important;
-    padding:0px 50px 0px 0px !important;
+    padding:0px 0px 0px 0px !important;
     display: inline-block !important;
-    display:inline-block
+    font-size: 14px;
     }
      li span{
          color: rgb(193, 193, 193) !important;

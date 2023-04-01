@@ -5,11 +5,11 @@ import Home from "./Home/Home";
 import Navbar from "./layout/Navbar"
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import BackToTop from "./BackToTop";
 import "animate.css";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import Footer from "./layout/Footer/Footer";
-import Contact from "./Contact";
 function App() {
   return (
     <>
@@ -20,6 +20,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
           </Routes>
           <Footer />
+          <BackToTop />
         </Provider>
       </BrowserRouter>
     </>

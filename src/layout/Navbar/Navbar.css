@@ -2,9 +2,12 @@
   color: #ff6633 !important;
 }
 .nav-link {
-  color: #bbb !important;
+  color: #bbb ;
   padding: 16px !important;
-  font-family: inherit;
+}
+.nav-linkOnScroll{
+  color: #ffffff !important;
+  padding: 16px !important;
 }
 .dropdown-toggle{
     text-decoration: none !important;
@@ -18,15 +21,25 @@
 .navbar-toggler-icon {
   border-radius: 3px;
 }
-.mainnav {
-  border-bottom: 0px solid #ffffff;
-  background-color: #383838;
-  background-color: #000000cd;
-  box-shadow: 0px 0px 9px 2px #ffffff47;
+.headerIconOnScroll i{
+  color: #fff !important;
+}
+.headerIcon i{
+  color: #fff !important;
 }
 .mainnav {
+  border-bottom: 0px solid #ffffff;
+  background-color: #000000cd;
   width: 100%;
   z-index: 999;
+  transition-duration: 0.3s;
+}
+.mainnavOnScroll{
+  background-color: #4b4a4af0;
+  width: 100%;
+  z-index: 999;
+  color: #000;
+  transition-duration: 1s;
 }
 .navbar {
   position: sticky !important;
@@ -62,11 +75,12 @@
 }
 
 .dropbtn {
-  background-color: rgba(0, 0, 0, 0.763);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
+  z-index: 9999999;
 }
 
 .dropdown {
@@ -77,7 +91,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #000000;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -95,7 +109,7 @@
   z-index: 5000;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+/* .dropdown-content a:hover {background-color: #ddd;} */
 
 .dropdown:hover .dropdown-content {display: block;}
 
