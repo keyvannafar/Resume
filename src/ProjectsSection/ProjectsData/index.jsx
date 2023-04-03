@@ -1,7 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import "./../../ProjectsSection/projectsSection.css";
-
 function ProjectsData({
   image1,
   image2,
@@ -42,20 +41,18 @@ function ProjectsData({
                   {desText1 == "" ? (
                     ""
                   ) : (
-                    <button className="p-1">
+                    <button className="p-1 projectsButton">
                       <i class="bi bi-github"></i> {desText1}
                     </button>
                   )}
                 </a>
-
                 <span>{desText2}</span>
-
                 <span>
                   <a href={url} target="_blank">
                     {urltext == "" ? (
                       ""
                     ) : (
-                      <button className="p-1">
+                      <button className="p-1 projectsButton">
                         <i class="bi bi-link-45deg"></i> {urltext}
                       </button>
                     )}

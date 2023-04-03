@@ -4,9 +4,10 @@ import RightSection from "./RightSection";
 import { useSelector } from "react-redux/es/exports";
 function SectionResume() {
   const Language = useSelector((state) => state.LanChange.Language);
+  const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
     <div className="full-width" id="about">
-      <h2 className="text-center about-header mb-5">
+      <h2 className="text-center about-header mb-4">
         {Language == false ? (
           <span className="text-black">Über mich</span>
         ) : (
@@ -14,7 +15,7 @@ function SectionResume() {
         )}
       </h2>
       <div>
-        <div className="container d-flex sectionthree">
+        <div className={`d-flex ${lightMode == true ? "sectionthree" : "sectionthreeLight"} `}>
           <div className="threeleft">
             <LeftSection />
           </div>

@@ -16,25 +16,7 @@ function Footer() {
   const Language = useSelector((state) => state.LanChange.Language);
   return (
     <footer className="py-3 my-4 bg-black footer">
-      {/* <ul className="nav justify-content-center  pb-3 mb-3 footerNav">
-        <li className="nav-item">
-          <a href="https://www.linkedin.com/in/mohammad-mehdi-nafarzadeh-028917240/">
-            <i class="bi bi-linkedin nav-link px-2 text-muted"></i>
-          </a>
-        </li>
-        <li className="nav-item">
-          <i class="bi bi-github nav-link px-2 text-muted"></i>
-        </li>
-      </ul>
-      <ul className="nav justify-content-center border-bottom  pb-3 mb-3 footerNav">
-        {Language == false
-          ? NavData.map((item) => <NavbarText key={item.id} {...item} />)
-          : NavDataEnglisch.map((item) => (
-              <NavbarText key={item.id} {...item} />
-            ))}
-      </ul>
-
-      <p className="text-center text-muted">&copy; 2022, M.M.Nafarzadeh</p> */}
+      
       <div class="container">
         <footer class="py-5">
           <div class="row">
@@ -44,22 +26,22 @@ function Footer() {
                 <ul className="nav footer-Nav">
                   {Language == false
                     ? NavData.map((item) => (
-                        <li class=" mb-2">
-                          <NavbarText key={item.id} {...item} />
-                        </li>
+                        <>
+                          <li class=" mb-2 w-100">
+                            <NavbarText key={item.id} {...item} />
+                          </li>
+                        </>
                       ))
                     : NavDataEnglisch.map((item) => (
                         <NavbarText key={item.id} {...item} />
                       ))}
-                </ul>
+                </ul><br />
               </ul>
             </div>
 
-            <div class="col-6 col-md-1 mb-3">
-              
-            </div>
+            <div class="col-1 col-md-1 mb-3"></div>
 
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-6 col-md-3 mb-3">
               <h5>Adress </h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
@@ -88,7 +70,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div class="col-md-7 offset-md-1 mb-3">
+            <div class="col-md-6 offset-md-1 mb-3">
               <Contact />
             </div>
           </div>

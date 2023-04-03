@@ -11,9 +11,11 @@ import { NavDataEnglisch } from "./dataNavbar/DataNav";
 import NavbarText from "./dataNavbar";
 function Navbar() {
   const setLanguage = useDispatch();
+  const [ltMode, setltMode] = useState(false);
   const setId = useDispatch();
+  const setLightMode = useDispatch();
   const [Lan, setLan] = useState(false);
-  const setScroll = useDispatch()
+  const setScroll = useDispatch();
   const Language = useSelector((state) => state.LanChange.Language);
   const Scroll = useSelector((state) => state.OnScroll.Scroll);
   function toggleLan() {
@@ -22,11 +24,17 @@ function Navbar() {
       ? setLanguage({ type: "Englisch" })
       : setLanguage({ type: "Deutsch" });
   }
+  function LightMode() {
+    setltMode(!ltMode);
+    ltMode == false
+      ? setLightMode({ type: "LightModeOff" })
+      : setLightMode({ type: "LightModeOn" });
+  }
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
         setScroll({ type: "menuOnScroll" });
-      }  else {
+      } else {
         setScroll({ type: "zeroScroll" });
       }
     });
@@ -61,6 +69,10 @@ function Navbar() {
                   ))}
             </div>
           </div>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round" onClick={LightMode}></span>
+          </label>
           <div class="dropdown">
             <button class="dropbtn">
               {Lan == true ? (
@@ -73,6 +85,7 @@ function Navbar() {
                 </div>
               )}
             </button>
+
             <div class="dropdown-content">
               <a href="#">
                 {Lan == true ? (

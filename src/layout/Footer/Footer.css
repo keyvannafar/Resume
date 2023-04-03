@@ -1,11 +1,6 @@
 .footerNav span{
     color: red !important;
 }
-.nav-item li {
-   display:inline-block  !important;
-   width: 100% !important;
-   color: red !important;
-}
 .footer{
     z-index: 999;
     position: relative;

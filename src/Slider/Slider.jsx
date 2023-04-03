@@ -14,7 +14,7 @@ function Slider() {
       </div>
       <div class="carousel-inner ">
         <div class="carousel-item active">
-          <img src={slide2} class="d-block w-75 slider-image" alt="slider-image" />
+          <img src={slide2} class="d-block slider-image" alt="slider-image" />
           
       </div>
       </div>

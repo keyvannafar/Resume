@@ -6,7 +6,6 @@ function CV() {
   const personalId = useSelector((state) => state.ButtonDes.personalId);
   const Language = useSelector((state) => state.LanChange.Language);
 
-  //alert(personalId)
   return (
     <div className="animate__animated animate__fadeInRightBig cv-main">
       <div className="mainDta">
