@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import LazyLoad from "react-lazyload";
 import "./../../ProjectsSection/projectsSection.css";
 function ProjectsData({
@@ -12,10 +13,17 @@ function ProjectsData({
   gitUrl,
   url,
 }) {
+   const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
     <>
       <div className="container mb-2">
-        <div className="container projectsSection">
+        <div
+          className={`container ${
+            lightMode == true
+              ? "projectsSection"
+              : "projectsSection projectsSectionLight"
+          }`}
+        >
           <div className="projectLaptopSize text-center">
             <LazyLoad offset={0}>
               <img

@@ -2,10 +2,11 @@ import { useSelector } from "react-redux";
 import "./Slidertext.css";
 
 function Slidertext() {
+  const lightMode = useSelector((state) => state.LightMode.lightMode);
   const Language = useSelector((state) => state.LanChange.Language)
   return (
     <>
-      <div className="slidertext ">
+      <div className={`${lightMode == true ? "slidertext" : "slidertext-Light"}`}>
         <h1 className="fade_h1">M.M.Nafarzadeh</h1>
         <br />
         <br />

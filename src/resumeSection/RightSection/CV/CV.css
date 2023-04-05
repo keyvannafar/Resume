@@ -9,6 +9,9 @@
     color: #ff6633;
     width:33%;
 }
+.light span{
+    color: #000 !important;
+}
 .cv-title{
     color: #fff;
 }

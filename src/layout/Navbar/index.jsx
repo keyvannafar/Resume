@@ -44,7 +44,15 @@ function Navbar() {
       <div id="home"></div>
       <nav
         className={`navbar navbar-expand-lg navbar-light ${
-          Scroll == 0 ? `mainnav` : Scroll == 1 ? "mainnavOnScroll" : "mainnav"
+          ltMode == false && Scroll == 0
+            ? `mainnav`
+            : Scroll == 1 && ltMode == false
+            ? "mainnavOnScroll"
+            : ltMode == true && Scroll == 0
+            ? `mainnav bg-white light`
+            : Scroll == 1 && ltMode == true
+            ? "mainnavOnScroll"
+            : "mainnav"
         }`}
       >
         <div className="container-fluid container">
@@ -59,7 +67,6 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon bg-white"></span>
           </button>
-
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               {Language == false
@@ -69,10 +76,11 @@ function Navbar() {
                   ))}
             </div>
           </div>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round" onClick={LightMode}></span>
-          </label>
+          <div>
+            <i class="bi bi-moon-stars"></i> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round" onClick={LightMode}></span></label> <i class="bi bi-brightness-high"></i>
+          </div>
           <div class="dropdown">
             <button class="dropbtn">
               {Lan == true ? (

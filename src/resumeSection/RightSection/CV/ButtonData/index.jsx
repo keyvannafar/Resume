@@ -63,44 +63,71 @@ function PersonalData({
 }) {
   const Id = useSelector((state) => state.ButtonDes.Id);
   const personalId = useSelector((state) => state.ButtonDes.personalId);
+  const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
-    <div>
+    <div className={`${lightMode == true ? "" : "cvLight"}`}>
       {personalId == 1 ? (
         <div className="animate__animated animate__fadeInRightBig">
           <div className="cv-titles w-100">
             <div className="title-lines"></div>
-            <div className="cv-title ms-1 me-1">{title}</div>
+            <div className="cv-title ms-1 me-1">
+              <span className="">{title}</span>
+            </div>
             <div className="title-lines"></div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{addressTitle}</div>
-            <div className="cv-rightbox text-white">{address}</div>
+            <div className="cv-leftbox">
+              <span>{addressTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{address}</span>
+            </div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{telephonTitle}</div>
-            <div className="cv-rightbox text-white">{telephon}</div>
+            <div className="cv-leftbox">
+              <span>{telephonTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{telephon}</span>
+            </div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{emailTitle}</div>
-            <div className="cv-rightbox text-white">{email}</div>
+            <div className="cv-leftbox">
+              <span>{emailTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{email}</span>
+            </div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{placeTitle}</div>
-            <div className="cv-rightbox text-white">{place}</div>
+            <div className="cv-leftbox">
+              <span>{placeTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{place}</span>
+            </div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{mariedTitle}</div>
-            <div className="cv-rightbox text-white">{maried}</div>
+            <div className="cv-leftbox">
+              <span>{mariedTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{maried}</span>
+            </div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{hobbyTitle}</div>
-            <div className="cv-rightbox text-white">{hobby}</div>
+            <div className="cv-leftbox">
+              <span>{hobbyTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{hobby}</span>
+            </div>
           </div>
         </div>
       ) : personalId == 2 ? (
@@ -114,34 +141,34 @@ function PersonalData({
             <div className="spacer"></div>
             <div className="cv-titles">
               <div className="personal-left">
-                <p className="personal-left">{dateActiveJob} </p>
+                <span className="personal-left">{dateActiveJob} </span>
               </div>
               <div className="personal-right">
-                <p className="text-white">{activeJobTitle}</p>
+                <span className="text-white">{activeJobTitle}</span>
               </div>
               <div className="personal-left">
-                <p> </p>
+                <span> </span>
               </div>
               <div className="personal-right">
-                <p>{activeJobCompany}</p>
+                <span>{activeJobCompany}</span>
               </div>
               <div className="personal-left">
-                <p className="personal-left">{dateLastJob} </p>
+                <span className="personal-left">{dateLastJob} </span>
               </div>
               <div className="personal-right">
-                <p className="text-white">{lastJobTitle}</p>
+                <span className="text-white">{lastJobTitle}</span>
               </div>
               <div className="personal-left">
-                <p> </p>
+                <span> </span>
               </div>
               <div className="personal-right">
-                <p>{lastJobCompany}</p>
+                <span>{lastJobCompany}</span>
               </div>
               <div className="personal-left">
-                <p> </p>
+                <span> </span>
               </div>
               <div className="personal-right">
-                <p>
+                <span>
                   {lastJobTask1}
                   <br /> {lastJobTask2}
                   <br /> {lastJobTask3}
@@ -149,33 +176,33 @@ function PersonalData({
                   <br /> {lastJobTask5}
                   <br /> {lastJobTask6}
                   <br /> {lastJobTask7}
-                </p>
+                </span>
               </div>
             </div>
             <div className="cv-titles">
               <div className="personal-left">
-                <p>{dateMiddleJob}</p>
+                <span>{dateMiddleJob}</span>
               </div>
               <div className="personal-right">
-                <p className="text-white">{middleJobTitle}</p>
+                <span className="text-white">{middleJobTitle}</span>
               </div>
               <div className="personal-left">
-                <p> </p>
+                <span> </span>
               </div>
               <div className="personal-right">
-                <p>{middleJobCompany} </p>
+                <span>{middleJobCompany} </span>
               </div>
               <div className="personal-left">
-                <p> </p>
+                <span> </span>
               </div>
               <div className="personal-right">
-                <p>
+                <span>
                   {middleJobTask1}
                   <br /> {middleJobTask2}
                   <br /> {middleJobTask3}
                   <br /> {middleJobTask4}
                   <br /> {middleJobTask5}
-                </p>
+                </span>
               </div>
             </div>
           </div>
@@ -184,33 +211,47 @@ function PersonalData({
         <div className="animate__animated animate__fadeInRightBig">
           <div className="cv-titles w-100">
             <div className="title-lines"></div>
-            <div className="cv-title ms-1 me-1">{title}</div>
+            <div className="cv-title ms-1 me-1">
+              <span>{title}</span>
+            </div>
             <div className="title-lines"></div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{university}</div>
-            <div className="cv-rightbox text-white">{ausbildungTitle}</div>
+            <div className="cv-leftbox">
+              <span>{university}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{ausbildungTitle}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{ausbildungPlace}</div>
+            <div className="cv-rightbox text-white">
+              <span>{ausbildungPlace}</span>
+            </div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{highschoolDate}</div>
-            <div className="cv-rightbox text-white">{highschoolTitle}</div>
-          </div>
-          {/* <div className="spacer"></div> */}
-          <div className="flex-int">
-            <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{highschoolPlace}</div>
+            <div className="cv-leftbox">
+              <span>{highschoolDate}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{highschoolTitle}</span>
+            </div>
           </div>
           {/* <div className="spacer"></div> */}
           <div className="flex-int">
             <div className="cv-leftbox"></div>
             <div className="cv-rightbox text-white">
-              {highschoolCartificate}
+              <span>{highschoolPlace}</span>
+            </div>
+          </div>
+          {/* <div className="spacer"></div> */}
+          <div className="flex-int">
+            <div className="cv-leftbox"></div>
+            <div className="cv-rightbox text-white">
+              <span>{highschoolCartificate}</span>
             </div>
           </div>
           <div className="spacer"></div>
@@ -219,58 +260,88 @@ function PersonalData({
         <div className="animate__animated animate__fadeInRightBig">
           <div className="cv-titles w-100">
             <div className="title-lines"></div>
-            <div className="cv-title ms-1 me-1">{title}</div>
+            <div className="cv-title ms-1 me-1">
+              <span>{title}</span>
+            </div>
             <div className="title-lines"></div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{knowledgeTitle}</div>
-            <div className="cv-rightbox text-white">{knowledge1}</div>
+            <div className="cv-leftbox">
+              <span>{knowledgeTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge1}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge2}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge2}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge3}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge3}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge4}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge4}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge5}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge5}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge6}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge6}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge7}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge7}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge8}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge8}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{knowledge9}</div>
+            <div className="cv-rightbox text-white">
+              <span>{knowledge9}</span>
+            </div>
           </div>
           <div className="spacer"></div>
           <div className="flex-int">
-            <div className="cv-leftbox">{languageTitle}</div>
-            <div className="cv-rightbox text-white">{lenguage1}</div>
+            <div className="cv-leftbox">
+              <span>{languageTitle}</span>
+            </div>
+            <div className="cv-rightbox text-white">
+              <span>{lenguage1}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{lenguage2}</div>
+            <div className="cv-rightbox text-white">
+              <span>{lenguage2}</span>
+            </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">{lenguage3}</div>
+            <div className="cv-rightbox text-white">
+              <span>{lenguage3}</span>
+            </div>
           </div>
           <div className="spacer"></div>
         </div>
