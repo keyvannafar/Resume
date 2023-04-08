@@ -1,18 +1,36 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,'Fira Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Fira Sans", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000 !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-h2{
-  color: #ff6600 !important;
-  font-weight: 400 !important;
+@media only screen and (min-width: 600px) {
+  h2 {
+    color: #ff6600 !important;
+    font-weight: 400 !important;
+    font-size: 26px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  h3{
+    font-size: 22px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    color: #ff6600 !important;
+    font-weight: 400 !important;
+    font-size: 22px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  h3{
+    font-size: 20px !important;
+  }
 }

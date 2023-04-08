@@ -1,5 +1,4 @@
 import "./LeftSection.css";
-import slide2 from "../../images/Keyvan-photo/keyvan-coat.jpg";
 import { useSelector } from "react-redux";
 import { DataDes } from "./Button-int/data";
 import { DataDesEnglisch } from "./Button-int/data";

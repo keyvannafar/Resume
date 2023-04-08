@@ -1,5 +1,4 @@
 
-import slide2 from "../../../../images/Keyvan-photo/keyvan-coat.jpg";
 const personalData = [
   {
     id: 1,
@@ -15,7 +14,6 @@ const personalData = [
     place: "12.05.1982 / Isfahan,Iran",
     mariedTitle: "Familienstand:",
     maried: "verheiratet",
-    image: slide2,
     hobbyTitle: "Hobbys",
     hobby: "Lesen, Reisen, Sport",
   },
@@ -92,7 +90,6 @@ const personalData = [
       place: "12.05.1982 / Isfahan,Iran",
       mariedTitle: "Marital status:",
       maried: "Married",
-      image: slide2,
       hobbyTitle: "Hobbies",
       hobby: "Reading, travelling, sports",
     },

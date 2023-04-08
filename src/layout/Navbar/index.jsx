@@ -77,9 +77,12 @@ function Navbar() {
             </div>
           </div>
           <div>
-            <i class="bi bi-moon-stars"></i> <label class="switch">
+            <i class="bi bi-moon-stars"></i>{" "}
+            <label class="switch">
               <input type="checkbox" />
-              <span class="slider round" onClick={LightMode}></span></label> <i class="bi bi-brightness-high"></i>
+              <span class="slider round" onClick={LightMode}></span>
+            </label>{" "}
+            <i class="bi bi-brightness-high"></i>
           </div>
           <div class="dropdown">
             <button class="dropbtn">
@@ -121,12 +124,14 @@ function Navbar() {
           <a
             className={`${Scroll == 1 ? `headerIconOnScroll` : "headerIcon"}`}
             href="https://www.linkedin.com/in/mohammad-mehdi-nafarzadeh-028917240/"
+            target="_blank"
           >
             <i class="bi bi-linkedin nav-link px-2 text-muted"></i>
           </a>
           <a
             className={`${Scroll == 1 ? `headerIconOnScroll` : "headerIcon"}`}
             href="https://github.com/keyvannafar"
+            target="_blank"
           >
             <i class="bi bi-github nav-link px-2 text-muted"></i>
           </a>

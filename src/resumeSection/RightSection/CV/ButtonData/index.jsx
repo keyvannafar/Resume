@@ -71,7 +71,9 @@ function PersonalData({
           <div className="cv-titles w-100">
             <div className="title-lines"></div>
             <div className="cv-title ms-1 me-1">
-              <span className="">{title}</span>
+              <span className="">
+                <b>{title}</b>
+              </span>
             </div>
             <div className="title-lines"></div>
           </div>

@@ -11,6 +11,7 @@ function NavbarText({ text, path, icon }) {
   const setId = useDispatch();
   const [Lan, setLan] = useState(false);
   const Language = useSelector((state) => state.LanChange.Language);
+  const lightMode =useSelector((state) => state.LightMode.lightMode)
   function toggleLan() {
     setLan(!Lan);
     Lan == false
@@ -19,15 +20,13 @@ function NavbarText({ text, path, icon }) {
   }
   return (
     <>
-      <div className="footer-Nav">
-        <li className="">
+      <div>
+        <li>
           {" "}
-          <a className="nav-link p-0" aria-current="page" href={path}>
+          <a className={`nav-link p-0`} aria-current="page" href={path}>
             {icon} {text}
-          </a>
-         
-        </li>
-       
+          </a>        
+        </li>      
       </div>
     </>
   );

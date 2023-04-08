@@ -7,23 +7,30 @@ import { NavData } from "../Navbar/dataNavbar/DataNav";
 import { NavDataEnglisch } from "../Navbar/dataNavbar/DataNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarText from "../Navbar/dataNavbar";
-
 import { formDataDeutsch } from "../../Contact/ContactFormData/contactData";
 import { formDataEnglish } from "../../Contact/ContactFormData/contactData";
 import FormContact from "../../Contact/ContactFormData";
 import { useSelector } from "react-redux";
 function Footer() {
   const Language = useSelector((state) => state.LanChange.Language);
+  const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
-    <footer className="py-3 my-4 bg-black footer">
-      
+    <footer
+      className={`py-3 my-4 footer ${
+        lightMode == true ? "bg-black" : "bg-white"
+      }`}
+    >
       <div class="container">
         <footer class="py-5">
           <div class="row">
             <div class="col-6 col-md-1 mb-3">
               <h5>Links</h5>
               <ul class="nav flex-column">
-                <ul className="nav footer-Nav">
+                <ul
+                  className={`nav footer-Nav ${
+                    lightMode == false ? "footerNavLight" : ""
+                  }`}
+                >
                   {Language == false
                     ? NavData.map((item) => (
                         <>
@@ -35,7 +42,8 @@ function Footer() {
                     : NavDataEnglisch.map((item) => (
                         <NavbarText key={item.id} {...item} />
                       ))}
-                </ul><br />
+                </ul>
+                <br />
               </ul>
             </div>
 
@@ -43,7 +51,11 @@ function Footer() {
 
             <div class="col-6 col-md-3 mb-3">
               <h5>Adress </h5>
-              <ul class="nav flex-column">
+              <ul
+                class={` flex-column ${
+                  lightMode == true ? "nav" : "nav navLight"
+                }`}
+              >
                 <li class="nav-item mb-2">
                   <span>
                     <i class="bi bi-geo-alt"></i> Frankfurt am Main
@@ -81,7 +93,11 @@ function Footer() {
             </p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3">
-                <a class="link-dark" href="https://github.com/keyvannafar">
+                <a
+                  class="link-dark"
+                  href="https://github.com/keyvannafar"
+                  target="_blank"
+                >
                   <i class="bi bi-github"></i>
                 </a>
               </li>
@@ -90,6 +106,7 @@ function Footer() {
                 <a
                   class="link-dark"
                   href="https://www.linkedin.com/in/mohammad-mehdi-nafarzadeh-028917240/"
+                  target="_blank"
                 >
                   <i class="bi bi-linkedin"></i>
                 </a>

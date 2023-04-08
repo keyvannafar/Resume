@@ -6,7 +6,11 @@ function Slidertext() {
   const Language = useSelector((state) => state.LanChange.Language)
   return (
     <>
-      <div className={`${lightMode == true ? "slidertext" : "slidertext-Light"}`}>
+      <div
+        className={`${
+          lightMode == true ? "slidertext" : "slidertext slidertext-Light"
+        }`}
+      >
         <h1 className="fade_h1">M.M.Nafarzadeh</h1>
         <br />
         <br />
@@ -30,8 +34,8 @@ function Slidertext() {
         ) : (
           <div>
             <p className="fade_text_slider">
-              <i class="bi bi-check-lg"></i> Some programming languages ​​for the{" "}
-              <b>Website Development</b>
+              <i class="bi bi-check-lg"></i> Some programming languages ​​for
+              the <b>Website Development</b>
             </p>
             <p className="fade_text_slider">
               <i class="bi bi-check-lg"></i> My resume and mine experiences

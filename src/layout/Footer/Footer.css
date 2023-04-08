@@ -4,9 +4,12 @@
 .footer{
     z-index: 999;
     position: relative;
-    margin-top: 190px !important;
+    margin-top: 0px !important;
     border-top: 3px solid #ff6633;
     padding-top: 50px !important;
+}
+.navLight span{
+    color: #333333 !important;
 }
 .footer-Nav a{
     color: rgb(193, 193, 193) !important;
@@ -14,6 +17,10 @@
     display: inline-block !important;
     font-size: 14px;
     }
+    .footerNavLight a{
+    color: #333333 !important;    
+    }
+    
      li span{
          color: rgb(193, 193, 193) !important;
     }

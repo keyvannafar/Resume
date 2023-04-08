@@ -3,6 +3,7 @@
     width: 100%;
     flex-wrap: wrap;
     margin-top: 20px;
+    letter-spacing: 1px;
 }
 .title-lines{
     background-color: #ff6633;

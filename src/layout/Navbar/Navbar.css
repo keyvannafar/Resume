@@ -34,6 +34,9 @@
   z-index: 999;
   transition-duration: 0.3s;
 }
+.mainnav i{
+  color: #fff;
+}
 .light a{
   color: #000 !important;
   font-weight: bold !important;
@@ -50,6 +53,9 @@
   z-index: 999;
   color: #000;
   transition-duration: 1s;
+}
+.mainnavOnScroll i{
+  color: #fff;
 }
 .navbar {
   position: sticky !important;
