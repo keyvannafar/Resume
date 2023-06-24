@@ -16,11 +16,11 @@
   flex-wrap: wrap;
 }
 .flex-int p {
-  color: #fff;
+  color: #626262;
 }
 .box-int {
   width: 50%;
-  color: #bbb;
+  color: #626262;
   font-size: 14px;
 }
 @media only screen and (max-width: 600px) {

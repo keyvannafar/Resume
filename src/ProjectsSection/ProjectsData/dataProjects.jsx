@@ -1,9 +1,7 @@
-import slide1 from "../../images/laptopProjects/Htmlcsslogo.png";
+
 import slide1Logo from "../../images/logo/html-5.png";
-import slide2 from "../../images/laptopProjects/Reactlogo.png";
 import slide2Logo from "../../images/logo/React.png";
 import slide4 from "../../images/laptopProjects/phisioWordpress.png";
-import slide8 from "../../images/laptopProjects/houria-wordpress.png";
 import slide4Logo from "../../images/logo/wordpress-logo.png";
 import slide3 from "../../images/laptopProjects/igreenMob.png";
 import slide5 from "../../images/laptopProjects/phisioWordpressMob.png";

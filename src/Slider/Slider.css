@@ -1,8 +1,8 @@
 .slider-image {
   margin: auto;
-  border-bottom-right-radius: 270px;
+  /* border-bottom-right-radius: 270px; */
   border-top-left-radius: 20px;
-  width: 75%;
+  width: 35%;
 }
 .slide {
   margin-top: 20px !important;
@@ -16,5 +16,8 @@
   width: 100%;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
+}
+.imgLarge{
+   display: none !important;
 }
 }

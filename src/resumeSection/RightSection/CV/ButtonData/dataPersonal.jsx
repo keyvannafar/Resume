@@ -96,6 +96,9 @@ const personalData = [
     {
       id: 2,
       title: "Professional background",
+      dateActiveJob: "10/2022 – now",
+      activeJobTitle: "Web-Designer",
+      activeJobCompany: "Company: Arico-Machine",
       dateLastJob: "02/2021 – 02/2022",
       lastJobTitle: "Web-Designer",
       lastJobCompany: "Company: Multi-Invest Co.(Frankfurt am Main)",

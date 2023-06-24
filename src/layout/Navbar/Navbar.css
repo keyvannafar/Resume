@@ -1,13 +1,19 @@
 .nav-link:hover {
   color: #ff6633 !important;
 }
-.nav-link {
-  color: #bbb ;
+.nav-link{
+  color: #333333 !important;
   padding: 16px !important;
+  text-decoration: none !important;
+  display: inline !important;
+  font-size: 14px !important;
+  border-right: 1px solid #bbb;
 }
 .nav-linkOnScroll{
-  color: #ffffff !important;
-  padding: 16px !important;
+  color: #333333 !important;
+}
+ul li  a{
+  text-decoration: none !important;
 }
 .dropdown-toggle{
     text-decoration: none !important;
@@ -22,20 +28,20 @@
   border-radius: 3px;
 }
 .headerIconOnScroll i{
-  color: #fff !important;
+  color: #333333 !important;
 }
 .headerIcon i{
-  color: #fff !important;
+  color: #333333 !important;
 }
 .mainnav {
   border-bottom: 0px solid #ffffff;
-  background-color: #000000cd;
+  background-color: #fff;
   width: 100%;
   z-index: 999;
   transition-duration: 0.3s;
 }
 .mainnav i{
-  color: #fff;
+  color: #333333;
 }
 .light a{
   color: #000 !important;
@@ -103,6 +109,9 @@
   position: relative;
   display: inline-block;
 }
+.dropdown a:hover{
+  background-color: #000;
+}
 
 .dropdown-content {
   display: none;
@@ -124,14 +133,7 @@
   position: relative;
   z-index: 5000;
 }
-
-/* .dropdown-content a:hover {background-color: #ddd;} */
-
 .dropdown:hover .dropdown-content {display: block;}
-
-/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
-
-/* The switch - the box around the slider */
 .switch {
   position: relative;
   align-self: center;
@@ -173,7 +175,7 @@
 }
 
 input:checked + .slider {
-  background-color: #ff6633;
+  background-color: #000000;
 }
 
 input:focus + .slider {

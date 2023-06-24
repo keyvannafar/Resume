@@ -12,12 +12,12 @@ import NavbarText from "./dataNavbar";
 function Navbar() {
   const setLanguage = useDispatch();
   const [ltMode, setltMode] = useState(false);
-  const setId = useDispatch();
   const setLightMode = useDispatch();
   const [Lan, setLan] = useState(false);
   const setScroll = useDispatch();
   const Language = useSelector((state) => state.LanChange.Language);
   const Scroll = useSelector((state) => state.OnScroll.Scroll);
+  const MenuMob = useSelector((state) => state.ToggleMenu.MenuMob);
   function toggleLan() {
     setLan(!Lan);
     Lan == false
@@ -67,25 +67,32 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon bg-white"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              {Language == false
-                ? NavData.map((item) => <NavbarText key={item.id} {...item} />)
-                : NavDataEnglisch.map((item) => (
-                    <NavbarText key={item.id} {...item} />
-                  ))}
+          <div
+            className={`collapse navbar-collapse ${
+              MenuMob == false ? "" : "d-none"
+            }`}
+            id="navbarNavAltMarkup"
+          >
+            <div className="navbar-nav">    
+                {Language == false
+                  ? NavData.map((item) => (
+                      <NavbarText key={item.id} {...item} />
+                    ))
+                  : NavDataEnglisch.map((item) => (
+                      <NavbarText key={item.id} {...item} />
+                    ))}
             </div>
           </div>
           <div>
-            <i class="bi bi-moon-stars"></i>{" "}
-            <label class="switch">
+            <i className="bi bi-moon-stars"></i>{" "}
+            <label className="switch">
               <input type="checkbox" />
-              <span class="slider round" onClick={LightMode}></span>
+              <span className="slider round" onClick={LightMode}></span>
             </label>{" "}
-            <i class="bi bi-brightness-high"></i>
+            <i className="bi bi-brightness-high"></i>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">
+          <div className="dropdown">
+            <button className="dropbtn">
               {Lan == true ? (
                 <div className="lanMenuIcon">
                   <img src={En} />
@@ -97,10 +104,10 @@ function Navbar() {
               )}
             </button>
 
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <a href="#">
                 {Lan == true ? (
-                  <Link class="dropdown-item" to="#" onClick={toggleLan}>
+                  <Link className="dropdown-item" to="#" onClick={toggleLan}>
                     <div className="lanRow">
                       <span className="lanText">De </span>
                       <div className="lanIcon">
@@ -109,7 +116,7 @@ function Navbar() {
                     </div>
                   </Link>
                 ) : (
-                  <Link class="dropdown-item" to="#" onClick={toggleLan}>
+                  <Link className="dropdown-item" to="#" onClick={toggleLan}>
                     <div className="lanRow">
                       <span className="lanText">En </span>
                       <div className="lanIcon">
@@ -126,14 +133,14 @@ function Navbar() {
             href="https://www.linkedin.com/in/mohammad-mehdi-nafarzadeh-028917240/"
             target="_blank"
           >
-            <i class="bi bi-linkedin nav-link px-2 text-muted"></i>
+            <i className="bi bi-linkedin nav-link px-2 text-muted"></i>
           </a>
           <a
             className={`${Scroll == 1 ? `headerIconOnScroll` : "headerIcon"}`}
             href="https://github.com/keyvannafar"
             target="_blank"
           >
-            <i class="bi bi-github nav-link px-2 text-muted"></i>
+            <i className="bi bi-github nav-link px-2 text-muted"></i>
           </a>
         </div>
       </nav>

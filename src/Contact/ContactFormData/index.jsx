@@ -4,17 +4,12 @@ import contactValidation from "../../Validation/Contact";
 
 
 function FormContact({
-  title,
   description,
   name,
   subject,
   email,
   message,
   buttonText,
-  address,
-  deutschTel,
-  iranTel,
-  emailPrivate,
 }) {
   const [errors, setErrors] = useState([]);
 
@@ -48,16 +43,11 @@ function FormContact({
 
   return (
     <>
-      <div className="contact-section" id="contact">
+      <div className="contact-section">
         <section className=" container contact-form">
-          {/* <h2 className="h1-responsive font-weight-bold text-center my-4">
-            {title}
-          </h2> */}
-
           <form
             id="contact-form"
             name="contact-form"
-            //action="mailto:kayvannafarzadeh@yahoo.com"
             method="POST"
             onSubmit={sendContactInfo}
           >
@@ -89,7 +79,7 @@ function FormContact({
                       )
                     : ""}
 
-                  <label for="name" className=""></label>
+                  <label htmlFor="name" className=""></label>
                 </div>
               </div>
 
@@ -119,7 +109,7 @@ function FormContact({
                         )
                       )
                     : ""}
-                  <label for="email" className=""></label>
+                  <label htmlFor="email" className=""></label>
                 </div>
               </div>
             </div>
@@ -151,7 +141,7 @@ function FormContact({
                         )
                       )
                     : ""}
-                  <label for="subject" className=""></label>
+                  <label htmlFor="subject" className=""></label>
                 </div>
               </div>
             </div>
@@ -183,7 +173,7 @@ function FormContact({
                         )
                       )
                     : ""}
-                  <label for="message"></label>
+                  <label htmlFor="message"></label>
                 </div>
               </div>
             </div>

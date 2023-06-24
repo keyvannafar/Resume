@@ -25,8 +25,7 @@
     background-color: #333333;
     color: #bbb;
     border: none;
-    /* box-shadow: 0px 0px 1px 2px #bbb; */
-    /* display: flex; */
+    width: 20%;
 }
 .leftthree button:hover{  
     background-color: #333333 !important;   

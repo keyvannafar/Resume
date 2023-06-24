@@ -6,7 +6,7 @@ function BackToTop() {
   return Scroll == 1 ? (
     <a href="#home">
       <button className="top">
-        <i class="bi bi-arrow-up"></i>
+        <i className="bi bi-arrow-up text-center"></i>
       </button>
     </a>
   ) : (

@@ -1,6 +1,5 @@
 .main{
     height: 100vh;
     overflow: auto;
-    perspective: 1px;
-    
+    perspective: 1px;   
 }

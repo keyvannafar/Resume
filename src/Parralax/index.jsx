@@ -9,9 +9,6 @@ export default function Parallax() {
   const [log, setLog] = useState();
   const Language = useSelector((state) => state.LanChange.Language);
   const [message, setMessage] = useState("");
-  const [passInfo, setpassInfo] = useState({
-    password: "",
-  });
   function Login() {
     if (message == "") {
       setLog(0);
@@ -21,15 +18,16 @@ export default function Parallax() {
       setLog(2);
     }
   }
-  function handlechange(e){
-     setMessage(e.target.value)     
+  function handlechange(e) {
+    setMessage(e.target.value);
   }
-  function zuruckToDoc(){
+  function zuruckToDoc() {
     setMessage("");
     setLog(3);
+    window.location.replace("#Parallax");
   }
   return (
-    <div className="parallax">
+    <div className="parallax" id="Parallax">
       <div className="parallaxBlur"></div>
       <div className="text-parallax">
         {Language == false ? (
@@ -54,7 +52,7 @@ export default function Parallax() {
               <br />
               <br />
               <button className="parallax-button" onClick={Login}>
-                <i class="bi bi-hand-index-thumb"></i> Bestätigung
+                <i className="bi bi-hand-index-thumb"></i> Bestätigung
               </button>
             </div>
 
@@ -107,14 +105,14 @@ export default function Parallax() {
                     <br />
                     <span>
                       <a href={Pdf} target="_blank">
-                        <i class="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
                         Abschlusszeugnis
                       </a>
                     </span>
                     <br />
                     <span>
                       <a href={Pdf1} target="_blank">
-                        <i class="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
                         Arbeitszeugnis
                       </a>
                     </span>
@@ -125,7 +123,7 @@ export default function Parallax() {
                         className="px-3 docBotton border-0"
                         onClick={zuruckToDoc}
                       >
-                        Zurück <i class="bi bi-arrow-right"></i>
+                        Zurück <i className="bi bi-arrow-right"></i>
                       </button>
                     </div>
                   </div>
@@ -170,7 +168,7 @@ export default function Parallax() {
               <br />
               <br />
               <button className="parallax-button" onClick={Login}>
-                <i class="bi bi-hand-index-thumb"></i> Confirmation
+                <i className="bi bi-hand-index-thumb"></i> Confirmation
               </button>
             </div>
             <div className="documents">
@@ -220,24 +218,25 @@ export default function Parallax() {
                     </span>
                     <span>
                       <a href={Pdf} target="_blank">
-                        <i class="bi bi-file-earmark-pdf-fill"></i> graduation
+                        <i className="bi bi-file-earmark-pdf-fill"></i> graduation
                         certificate
                       </a>
                     </span>
                     <br />
                     <span>
                       <a href={Pdf1} target="_blank">
-                        <i class="bi bi-file-earmark-pdf-fill"></i> certificate
+                        <i className="bi bi-file-earmark-pdf-fill"></i> certificate
                         of employment
                       </a>
                     </span>
+                    <br />
                     <br />
                     <div className="d-flex justify-content-center">
                       <button
                         className="px-3 docBotton border-0"
                         onClick={zuruckToDoc}
                       >
-                        Zurück <i class="bi bi-arrow-right"></i>
+                        Zurück <i className="bi bi-arrow-right"></i>
                       </button>
                     </div>
                   </div>

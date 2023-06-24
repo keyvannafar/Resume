@@ -1,0 +1,22 @@
+.skilsSection{
+    background-color: #dbc596;
+    justify-content: space-around;
+}
+.bar{
+    background-color: #fff;
+    width: 40%;
+}
+.progress{
+    background-color: #333333 !important;
+    border-radius: 0px !important;
+}
+.column{
+    width: 20%;
+}
+.title{
+    color: #333333 !important;
+}
+.label{
+    color: #333333 !important;
+    float: right !important;
+}

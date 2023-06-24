@@ -4,6 +4,7 @@ import "../Home/Home.css"
 import Procontext from "../Context/Procontext";
 import { useState} from "react";
 import Projects from "../ProjectsSection";
+import MySkils from "../MySkils";
 import SectionResume from "../resumeSection";
 import Parallax from "../Parralax";
 function Home() {
@@ -11,10 +12,11 @@ function Home() {
   return (
     <>
       <Procontext.Provider value={[Pro, setPro]}>
-        <Slidersection />
-        <SectionResume />
-        <Parallax />
-        <Projects />
+          <Slidersection />
+          <MySkils />
+          <SectionResume />
+          <Parallax />
+          <Projects />
       </Procontext.Provider>
     </>
   );

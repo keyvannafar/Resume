@@ -6,7 +6,7 @@ function SectionResume() {
   const Language = useSelector((state) => state.LanChange.Language);
   const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
-    <div className={`${lightMode == true ? " bg-black" : "bg-white"}`}>
+    <div className={`${lightMode == true ? " bg-white" : "bg-white"}`}>
       <div
         className={`${
           lightMode == true ? "full-width bg-white" : "full-width"

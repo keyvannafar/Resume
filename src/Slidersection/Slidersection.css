@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     padding-bottom: 60px;
     position: relative;
-    background-color: #000;
+    background-color: #333333;
     padding: 30px 0px;
     z-index: 1;
     border-bottom-right-radius: 0px;
@@ -22,7 +22,7 @@
 }
 .slider-left{
     width: 50%;
-    background-color: #00000000;  
+    background-color: #333333;  
 }
 .slider-right{
     width: 50%;

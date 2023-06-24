@@ -17,15 +17,15 @@ function Slidertext() {
         {Language == false ? (
           <div>
             <p className="fade_text_slider">
-              <i class="bi bi-check-lg"></i> Einige Programmiersprachen für die
+              <i className="bi bi-check-lg"></i> Einige Programmiersprachen für die
               <b> Website-Entwicklung</b>
             </p>
             <p className="fade_text_slider">
-              <i class="bi bi-check-lg"></i> Mein Lebenslauf und meine
+              <i className="bi bi-check-lg"></i> Mein Lebenslauf und meine
               Erfahrungen
             </p>
             <p className="fade_text_slider"></p>
-            <a className="nav-link" aria-current="page" href="#contact">
+            <a className="nav-link" aria-current="page" href="#Contact">
               <button className="btn btn-primary mb-2 contact-btn">
                 Kontakt
               </button>
@@ -34,14 +34,14 @@ function Slidertext() {
         ) : (
           <div>
             <p className="fade_text_slider">
-              <i class="bi bi-check-lg"></i> Some programming languages ​​for
+              <i className="bi bi-check-lg"></i> Some programming languages ​​for
               the <b>Website Development</b>
             </p>
             <p className="fade_text_slider">
-              <i class="bi bi-check-lg"></i> My resume and mine experiences
+              <i className="bi bi-check-lg"></i> My resume and mine experiences
             </p>
             <p className="fade_text_slider"></p>
-            <a className="nav-link" aria-current="page" href="#contact">
+            <a className="nav-link" aria-current="page" href="#Contact">
               <button className="btn btn-primary mb-2 contact-btn">
                 Contact
               </button>

@@ -3,12 +3,12 @@ export const NavData = [
     id: 1,
     text: "HOME",
     path: "#home",
-    icon: <i class="bi bi-house-door"></i>,
+    icon: <i className="bi bi-house-door"></i>,
   },
   {
     id: 2,
     text: "PROJEKTE",
-    path: "#sectionTwo",
+    path: "#projects",
   },
   {
     id: 3,
@@ -18,7 +18,7 @@ export const NavData = [
   {
     id: 4,
     text: "KONTAKT",
-    path: "#contact",
+    path: "#Contact",
   },
 ];
 export const NavDataEnglisch = [
@@ -26,7 +26,7 @@ export const NavDataEnglisch = [
     id: 1,
     text: "HOME",
     path: "#back-to-top",
-    icon: <i class="bi bi-house-door"></i>,
+    icon: <i className="bi bi-house-door"></i>,
   },
   {
     id: 2,

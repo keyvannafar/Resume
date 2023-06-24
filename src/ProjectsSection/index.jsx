@@ -6,6 +6,7 @@ function Projects() {
      const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
     <>
+      <div id="projects"></div>
       <div
         className={`${
           lightMode == true

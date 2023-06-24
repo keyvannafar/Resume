@@ -12,9 +12,8 @@ function LeftSection() {
   return (
     <>
       <div className="leftthree">
-        {/* <img className="image-int" src={slide2} /> */}
         <p className={`text-center ${lightMode == true ? "text-white" : "text-black"}`}>
-          MENU <i class="bi bi-arrow-down"></i>
+          MENU <i className="bi bi-arrow-down"></i>
         </p>
         {Language == false
           ? DataDes.map((item) => <IntButton key={item.id} {...item} />)

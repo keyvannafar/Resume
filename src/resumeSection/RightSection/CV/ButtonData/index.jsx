@@ -1,10 +1,7 @@
-import {personalData} from "./dataPersonal";
-import CV from ".."
+
 import { useSelector } from "react-redux"
 function PersonalData({
-  id,
   title,
-  name,
   addressTitle,
   address,
   telephonTitle,
@@ -15,7 +12,6 @@ function PersonalData({
   place,
   mariedTitle,
   maried,
-  image,
   dateLastJob,
   lastJobTitle,
   lastJobCompany,
@@ -82,7 +78,7 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{addressTitle}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{address}</span>
             </div>
           </div>
@@ -91,7 +87,7 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{telephonTitle}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{telephon}</span>
             </div>
           </div>
@@ -100,7 +96,7 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{emailTitle}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{email}</span>
             </div>
           </div>
@@ -109,7 +105,7 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{placeTitle}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{place}</span>
             </div>
           </div>
@@ -118,7 +114,7 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{mariedTitle}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{maried}</span>
             </div>
           </div>
@@ -127,7 +123,7 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{hobbyTitle}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{hobby}</span>
             </div>
           </div>
@@ -154,6 +150,7 @@ function PersonalData({
               <div className="personal-right">
                 <span>{activeJobCompany}</span>
               </div>
+              <br /><br />
               <div className="personal-left">
                 <span className="personal-left">{dateLastJob} </span>
               </div>
@@ -223,13 +220,13 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{university}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{ausbildungTitle}</span>
             </div>
           </div>
           <div className="flex-int">
             <div className="cv-leftbox"></div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{ausbildungPlace}</span>
             </div>
           </div>
@@ -238,18 +235,16 @@ function PersonalData({
             <div className="cv-leftbox">
               <span>{highschoolDate}</span>
             </div>
-            <div className="cv-rightbox text-white">
+            <div className="cv-rightbox ">
               <span>{highschoolTitle}</span>
             </div>
           </div>
-          {/* <div className="spacer"></div> */}
           <div className="flex-int">
             <div className="cv-leftbox"></div>
             <div className="cv-rightbox text-white">
               <span>{highschoolPlace}</span>
             </div>
           </div>
-          {/* <div className="spacer"></div> */}
           <div className="flex-int">
             <div className="cv-leftbox"></div>
             <div className="cv-rightbox text-white">

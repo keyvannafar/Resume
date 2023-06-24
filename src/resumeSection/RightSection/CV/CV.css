@@ -14,7 +14,7 @@
     color: #000 !important;
 }
 .cv-title{
-    color: #fff;
+    color: #626262;
 }
 .address-part{
     width: 70%;
@@ -34,17 +34,16 @@
     margin-top: 30px;
 }
 .address-part p{
-    color: #fff;
+    color: #626262;
 }
 .personal-left{
     width: 45%;
-    color: #fff;
+    color: #626262;
     letter-spacing: 0.7px;
 }
 .personal-right{
     width: 55%;
-    color: #fff;
-    color: #bbb;
+    color: #626262;
     letter-spacing: 0.7px;
 }
 .mainDta{
@@ -61,26 +60,24 @@
 @media only screen and (min-width: 600px) {
 .cv-leftbox{
     width: 40%;
-    color: #fff;
-    color: #bbb;
+    color: #626262;
     letter-spacing: 0.7px;
 }
 .cv-righttbox{
     width: 60%;
-    color: #fff !important;
+    color: #626262 !important;
     letter-spacing: 0.7px;
 }
 }
 @media only screen and (max-width: 600px) {
 .cv-leftbox{
     width: 100% !important;
-    color: #fff;
-    color: #bbb;
+    color: #626262;
     letter-spacing: 0.7px;
 }
 .cv-righttbox{
     width: 100% !important;
-    color: #fff !important;
+    color: #626262 !important;
 }
 .personal-left{
     width: 100% !important;

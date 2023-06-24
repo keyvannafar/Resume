@@ -1,5 +1,3 @@
-//import './App.css';
-//import Header from "Header.js"
 import Contact from "../../Contact";
 import "./Footer.css";
 import React from "react";
@@ -7,9 +5,6 @@ import { NavData } from "../Navbar/dataNavbar/DataNav";
 import { NavDataEnglisch } from "../Navbar/dataNavbar/DataNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarText from "../Navbar/dataNavbar";
-import { formDataDeutsch } from "../../Contact/ContactFormData/contactData";
-import { formDataEnglish } from "../../Contact/ContactFormData/contactData";
-import FormContact from "../../Contact/ContactFormData";
 import { useSelector } from "react-redux";
 function Footer() {
   const Language = useSelector((state) => state.LanChange.Language);
@@ -19,13 +14,14 @@ function Footer() {
       className={`py-3 my-4 footer ${
         lightMode == true ? "bg-black" : "bg-white"
       }`}
+      id="Contact"
     >
-      <div class="container">
-        <footer class="py-5">
-          <div class="row">
-            <div class="col-6 col-md-1 mb-3">
+      <div className="container">
+        <footer className="py-5">
+          <div className="row">
+            <div className="col-6 col-md-1 mb-3">
               <h5>Links</h5>
-              <ul class="nav flex-column">
+              <ul className="nav flex-column">
                 <ul
                   className={`nav footer-Nav ${
                     lightMode == false ? "footerNavLight" : ""
@@ -34,86 +30,91 @@ function Footer() {
                   {Language == false
                     ? NavData.map((item) => (
                         <>
-                          <li class=" mb-2 w-100">
+                          <li className=" mb-2 w-100">
                             <NavbarText key={item.id} {...item} />
                           </li>
                         </>
                       ))
                     : NavDataEnglisch.map((item) => (
-                        <NavbarText key={item.id} {...item} />
+                        <>
+                          <li className=" mb-2 w-100">
+                            <NavbarText key={item.id} {...item} />
+                          </li>
+                        </>
                       ))}
                 </ul>
                 <br />
               </ul>
             </div>
 
-            <div class="col-1 col-md-1 mb-3"></div>
+            <div className="col-1 col-md-1 mb-3"></div>
 
-            <div class="col-6 col-md-3 mb-3">
+            <div className="col-6 col-md-3 mb-3">
               <h5>Adress </h5>
               <ul
-                class={` flex-column ${
+                className={` flex-column ${
                   lightMode == true ? "nav" : "nav navLight"
                 }`}
               >
-                <li class="nav-item mb-2">
+                <li className="nav-item mb-2">
                   <span>
-                    <i class="bi bi-geo-alt"></i> Frankfurt am Main
+                    <i className="bi bi-geo-alt"></i> Frankfurt am Main
                   </span>
                 </li>
-                <li class="nav-item mb-2">
+                <li className="nav-item mb-2">
                   <span>60598 ,DE</span>
                 </li>
-                <li class="nav-item mb-2">
+                <li className="nav-item mb-2">
                   <span>
-                    <i class="bi bi-phone-vibrate"></i> +49 178 712 3740
+                    <i className="bi bi-phone-vibrate"></i> +49 178 712 3740
                   </span>
                 </li>
-                <li class="nav-item mb-2">
+                <li className="nav-item mb-2">
                   <span>
-                    <i class="bi bi-whatsapp"></i> +98 913 104 2684
+                    <i className="bi bi-whatsapp"></i> +98 913 104 2684
                   </span>
                 </li>
-                <li class="nav-item mb-2">
+                <li className="nav-item mb-2">
                   <span>
-                    <i class="bi bi-envelope"></i> Kayvannafarzadeh@yahoo.com
+                    <i className="bi bi-envelope"></i>{" "}
+                    Kayvannafarzadeh@yahoo.com
                   </span>
                 </li>
               </ul>
             </div>
 
-            <div class="col-md-6 offset-md-1 mb-3">
+            <div className="col-md-6 offset-md-1 mb-3 p-0">
               <Contact />
             </div>
           </div>
 
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p className="copyright">
               © 2022, All rights reserved, M.M.Nafarzadeh
             </p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3">
+            <ul className="list-unstyled d-flex">
+              <li className="ms-3">
                 <a
-                  class="link-dark"
+                  className="link-dark"
                   href="https://github.com/keyvannafar"
                   target="_blank"
                 >
-                  <i class="bi bi-github"></i>
+                  <i className="bi bi-github"></i>
                 </a>
               </li>
 
-              <li class="ms-3">
+              <li className="ms-3">
                 <a
-                  class="link-dark"
+                  className="link-dark"
                   href="https://www.linkedin.com/in/mohammad-mehdi-nafarzadeh-028917240/"
                   target="_blank"
                 >
-                  <i class="bi bi-linkedin"></i>
+                  <i className="bi bi-linkedin"></i>
                 </a>
               </li>
-              <li class="ms-3">
-                <a class="link-dark" href="#">
-                  <i class="bi bi-instagram"></i>
+              <li className="ms-3">
+                <a className="link-dark" href="#">
+                  <i className="bi bi-instagram"></i>
                 </a>
               </li>
             </ul>

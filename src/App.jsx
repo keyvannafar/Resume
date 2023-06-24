@@ -15,12 +15,12 @@ function App() {
     <>
       <BrowserRouter>
         <Provider store={store}>
-          <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-          </Routes>
-          <Footer />
-          <BackToTop />
+            <Navbar />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+            </Routes>
+            <Footer />
+            <BackToTop />
         </Provider>
       </BrowserRouter>
     </>

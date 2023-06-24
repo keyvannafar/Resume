@@ -36,21 +36,57 @@ function ProjectsData({
               <h3 className="urltext text-700">{title}</h3>
             </div>
           </div>
-          <div className="projectMobileSize text-center">
+          <div className="projectLaptopSize text-center">
             <LazyLoad offset={0}>
+              <img
+                className="animate__animated animate__fadeInLeftBig"
+                src={image1}
+              />
+            </LazyLoad>
+            <span></span>
+            <div className="urltextOnHover animate__animated animate__zoomIn">
+              <h3 className="urltext text-700">{title}</h3>
+            </div>
+          </div>
+          <div className="projectLaptopSize text-center">
+            <LazyLoad offset={0}>
+              <img
+                className="animate__animated animate__fadeInLeftBig"
+                src={image1}
+              />
+            </LazyLoad>
+            <span></span>
+            <div className="urltextOnHover animate__animated animate__zoomIn">
+              <h3 className="urltext text-700">{title}</h3>
+            </div>
+          </div>
+          <div className="projectLaptopSize text-center">
+            <LazyLoad offset={0}>
+              <img
+                className="animate__animated animate__fadeInLeftBig"
+                src={image1}
+              />
+            </LazyLoad>
+            <span></span>
+            <div className="urltextOnHover animate__animated animate__zoomIn">
+              <h3 className="urltext text-700">{title}</h3>
+            </div>
+          </div>
+          <div className="projectMobileSize text-center">
+            {/* <LazyLoad offset={0}>
               <img
                 className="animate__animated animate__fadeInRightBig"
                 src={image2}
               />
-            </LazyLoad>
-            <div className="urltextOnHover animate__animated animate__zoomIn">
+            </LazyLoad> */}
+            {/* <div className="urltextOnHover animate__animated animate__zoomIn">
               <div className="urltext">
                 <a href={gitUrl} target="_blank">
                   {desText1 == "" ? (
                     ""
                   ) : (
                     <button className="p-1 projectsButton">
-                      <i class="bi bi-github"></i> {desText1}
+                      <i className="bi bi-github"></i> {desText1}
                     </button>
                   )}
                 </a>
@@ -61,13 +97,13 @@ function ProjectsData({
                       ""
                     ) : (
                       <button className="p-1 projectsButton">
-                        <i class="bi bi-link-45deg"></i> {urltext}
+                        <i className="bi bi-link-45deg"></i> {urltext}
                       </button>
                     )}
                   </a>
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

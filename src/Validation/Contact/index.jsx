@@ -37,18 +37,6 @@ function contactValidation(contactInfo) {
       Textareamessage: "this field is empty",
     });
   }
-  // if (!contactInfo.textarea) {
-  //   errorList.push({
-  //     target: "textarea",
-  //     textareamessage: "this field is empty",
-  //   });
-  // }
-  // if(!contactInfo.address){
-  //     errorList.push({
-  //       target: "address",
-  //       repeatpasswordmessage: "this field is empty",
-  //     });
-  // }
   return errorList;
 }
 
