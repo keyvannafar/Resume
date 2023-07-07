@@ -1,0 +1,16 @@
+.loginPage{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999 !important;
+    top: 0 !important;
+}
+.loginForm{
+    width: 30%;
+    position: relative;
+    z-index: 0 !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

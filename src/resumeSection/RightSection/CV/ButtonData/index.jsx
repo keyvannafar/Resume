@@ -1,4 +1,3 @@
-
 import { useSelector } from "react-redux"
 function PersonalData({
   title,
@@ -59,9 +58,8 @@ function PersonalData({
 }) {
   const Id = useSelector((state) => state.ButtonDes.Id);
   const personalId = useSelector((state) => state.ButtonDes.personalId);
-  const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
-    <div className={`${lightMode == true ? "" : "cvLight"}`}>
+    <div>
       {personalId == 1 ? (
         <div className="animate__animated animate__fadeInRightBig">
           <div className="cv-titles w-100">

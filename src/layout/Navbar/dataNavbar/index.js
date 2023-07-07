@@ -1,5 +1,6 @@
 import "../Navbar.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { EmojiSmileUpsideDownFill } from "react-bootstrap-icons";
@@ -10,21 +11,22 @@ function NavbarText({ text, path, icon }) {
   return (
     <>
       <div id="home"></div>
-        <li className="nav-item">
-          <a
-            className={`${
-              Scroll == 0 ? `nav-link` : `nav-link nav-linkOnScroll`
-            }`}
-            aria-current="page"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            {icon} {text}
-          </a>
-        </li>
+      <li className="nav-item">
+        <Link
+          to="/"
+          className={`${
+            Scroll == 0 ? `nav-link` : `nav-link nav-linkOnScroll`
+          }`}
+          // aria-current="page"
+          // data-bs-toggle="collapse"
+          // data-bs-target="#navbarNavAltMarkup"
+          // aria-controls="navbarNavAltMarkup"
+          // aria-expanded="false"
+          // aria-label="Toggle navigation"
+        >
+          {icon} {text}
+        </Link>
+      </li>
     </>
   );
 }

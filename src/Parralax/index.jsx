@@ -1,31 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import Pdf from "./data/Bachelor.pdf";
 import Pdf1 from "./data/zeugnis.pdf";
 import "./Parralax.css";
 export default function Parallax() {
-  const lightMode = useSelector((state) => state.LightMode.lightMode);
+  
   const [log, setLog] = useState();
+  const loginMode = useSelector((state) => state.LoginMode.loginMode);
   const Language = useSelector((state) => state.LanChange.Language);
   const [message, setMessage] = useState("");
-  function Login() {
-    if (message == "") {
-      setLog(0);
-    } else if (message == "773311") {
-      setLog(1);
-    } else {
-      setLog(2);
+  function LoginFunc(){
+    if (log == 1){
+
     }
   }
-  function handlechange(e) {
-    setMessage(e.target.value);
-  }
-  function zuruckToDoc() {
-    setMessage("");
-    setLog(3);
-    window.location.replace("#Parallax");
-  }
+  // function zuruckToDoc() {
+  //   setMessage("");
+  //   setLog(3);
+  //   window.location.replace("#Parallax");
+  // }
+ 
   return (
     <div className="parallax" id="Parallax">
       <div className="parallaxBlur"></div>
@@ -35,13 +31,71 @@ export default function Parallax() {
             <h3>Meine Dokumente</h3>
             <br />
             <div className={`f ${log == 1 ? "d-none" : "d-block"}`}>
-              <span>
+              <span className="textDoc">
                 Sie können die Dokumente zu meinem Arbeits- und
-                Ausbildungsverlauf einsehen, indem Sie das Passwort eingeben
+                Ausbildungsverlauf einsehen
               </span>
               <br />
               <br />
-              <input
+              <br />
+              <div className="docSection">
+                <button onClick={LoginFunc} className="docButton">
+                  {log == 1 ? (
+                    <span>
+                      <a href={Pdf} target="_blank">
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        Anschreiben
+                      </a>
+                    </span>
+                  ) : (
+                    <span>
+                      <Link to="/Login">
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        Anschreiben
+                      </Link>
+                    </span>
+                  )}
+                </button>
+                <button onClick={LoginFunc} className="docButton">
+                  {loginMode !== 1 ? (
+                    <span>
+                      <Link to="/Login">
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        Abschlusszeugnis
+                      </Link>
+                    </span>
+                  ) : (
+                    <span>
+                      <a href={Pdf} target="_blank">
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        Abschlusszeugnis
+                      </a>
+                    </span>
+                  )}
+                </button>
+                <button onClick={LoginFunc} className="docButton">
+                  {loginMode !== 1 ? (
+                    <span>
+                      <Link to="/Login">
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        Arbeitszeugnis
+                      </Link>
+                    </span>
+                  ) : (
+                    <span>
+                      <a href={Pdf1} target="_blank">
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        Arbeitszeugnis
+                      </a>
+                    </span>
+                  )}
+                </button>
+              </div>
+              <br />
+
+              <br />
+              <br />
+              {/* <input
                 type="password"
                 name="email"
                 className="loginForm"
@@ -53,16 +107,14 @@ export default function Parallax() {
               <br />
               <button className="parallax-button" onClick={Login}>
                 <i className="bi bi-hand-index-thumb"></i> Bestätigung
-              </button>
+              </button> */}
             </div>
 
-            <div className="documents">
-              {log == 1 ? (
+            {/* <div className="documents">
+              {loginMode == 1 ? (
                 <>
                   <div
-                    className={`animate__animated animate__zoomIn bg-opacity-75 p-5 ${
-                      lightMode == true ? "bg-black" : "bg-white text-black"
-                    }`}
+                    className={`animate__animated animate__zoomIn bg-opacity-75 p-5`}
                   >
                     <span>
                       Sehr geehrte Damen und Herren, <br />
@@ -129,13 +181,13 @@ export default function Parallax() {
                   </div>
                   <br />
                 </>
-              ) : log == 0 ? (
+              ) : loginMode == 0 ? (
                 <div className="text-center">
                   <br />
                   <br />
                   <p>Bitte geben Sie das Passwort ein.</p>
                 </div>
-              ) : log == 2 ? (
+              ) : loginMode == 2 ? (
                 <div className="text-center">
                   <br />
                   <br />
@@ -144,7 +196,7 @@ export default function Parallax() {
               ) : (
                 ""
               )}
-            </div>
+            </div> */}
           </>
         ) : (
           <>
@@ -163,21 +215,19 @@ export default function Parallax() {
                 className="loginForm"
                 placeholder="password"
                 value={message}
-                onChange={handlechange}
+                // onChange={handlechange}
               />
               <br />
               <br />
-              <button className="parallax-button" onClick={Login}>
+              {/* <button className="parallax-button" onClick={Login}>
                 <i className="bi bi-hand-index-thumb"></i> Confirmation
-              </button>
+              </button> */}
             </div>
-            <div className="documents">
-              {log == 1 ? (
+            {/* <div className="documents">
+              {loginMode == 1 ? (
                 <>
                   <div
-                    className={`animate__animated animate__zoomIn bg-opacity-75 p-5 ${
-                      lightMode == true ? "bg-black" : "bg-white text-black"
-                    }`}
+                    className={`animate__animated animate__zoomIn bg-opacity-75 p-5`}
                   >
                     <span>
                       Dear Sir or Madam, <br />
@@ -218,15 +268,15 @@ export default function Parallax() {
                     </span>
                     <span>
                       <a href={Pdf} target="_blank">
-                        <i className="bi bi-file-earmark-pdf-fill"></i> graduation
-                        certificate
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        graduation certificate
                       </a>
                     </span>
                     <br />
                     <span>
                       <a href={Pdf1} target="_blank">
-                        <i className="bi bi-file-earmark-pdf-fill"></i> certificate
-                        of employment
+                        <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
+                        certificate of employment
                       </a>
                     </span>
                     <br />
@@ -242,13 +292,13 @@ export default function Parallax() {
                   </div>
                   <br />
                 </>
-              ) : log == 0 ? (
+              ) : loginMode == 0 ? (
                 <div className="text-center">
                   <br />
                   <br />
                   <p>Please enter the password.</p>
                 </div>
-              ) : log == 2 ? (
+              ) : loginMode == 2 ? (
                 <div className="text-center">
                   <br />
                   <br />
@@ -257,7 +307,7 @@ export default function Parallax() {
               ) : (
                 ""
               )}
-            </div>
+            </div> */}
           </>
         )}
       </div>

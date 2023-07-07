@@ -1,0 +1,102 @@
+.cv-titles{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 7px 2px #bbb;
+    padding: 30px;
+}
+.exprienceTitle{
+    padding-bottom: 30px;
+    background-color: #f0f0f0;
+    color: #000;
+}
+h2{
+    font-size: 45px !important;
+    color: #000 !important;
+    font-family: inherit !important;
+    font-weight: 300 !important;
+}
+.light span{
+    color: #000 !important;
+}
+.cv-title{
+    color: #848484;
+}
+.address-part{
+    width: 70%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.address-part h4{
+    width: 100%;
+}
+.address-part p{
+    color: #626262;
+    
+}
+.personal-left{
+    width: 50%;
+    color: #626262;
+    letter-spacing: 0.7px;
+    text-align: center !important;
+}
+.personal-right{
+    width: 50%;
+    color: #626262;
+    letter-spacing: 0.7px; font-size: 14px;
+}
+i{
+    font-weight: 900 !important;
+    font-size: 16px;
+    color: #000;
+}
+h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+.mainDta{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-int{
+    width: 100%;
+}
+.spacer{
+    height: 20px;
+}
+@media only screen and (min-width: 600px) {
+.cv-leftbox{
+    width: 40%;
+    color: #626262;
+    letter-spacing: 0.7px;
+}
+.cv-righttbox{
+    width: 60%;
+    color: #626262 !important;
+    letter-spacing: 0.7px;
+}
+}
+@media only screen and (max-width: 600px) {
+.cv-leftbox{
+    width: 100% !important;
+    color: #626262;
+    letter-spacing: 0.7px;
+}
+.cv-righttbox{
+    width: 100% !important;
+    color: #626262 !important;
+}
+.personal-left{
+    width: 100% !important;
+}
+.personal-right{
+    width: 100% !important;
+}
+.cv-main{
+    margin-top: 30px;
+}
+}

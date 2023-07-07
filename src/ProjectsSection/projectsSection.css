@@ -1,13 +1,17 @@
-.projectsSection {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
 .projectSectionMain {
   background-color: #fff;
   z-index: 1 !important;
   position: relative;
   padding-bottom: 190px;
+}
+.projectLaptopSize{
+  width: 25% !important;
+}
+.projectsBox{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .projectSectionMainLight {
   background: linear-gradient(90deg, #ff6633 0%, #fe9149 70%, #fbc29d 100%);
@@ -31,25 +35,29 @@ a {
 }
 img {
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
 }
 .urltextOnHover {
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 10%;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.74);
+  background-color: rgba(255, 255, 255, 0);
   z-index: 999;
 }
 .projectMobileSize:hover .urltextOnHover {
   height: 30%;
-  transition-duration: 0.4s;
+  transition-duration: 0.4s; background-color: #000000b5;
 }
 .projectLaptopSize:hover .urltextOnHover {
   height: 30%;
-  transition-duration: 0.4s;
-  font-style: italic;
+  transition-duration: 0.5s;
+  background-color: #000000b7;
+}
+.projectLaptopSize:hover .urltext {
+  display: block;
+ 
 }
 .urltext {
   position: absolute;
@@ -57,8 +65,9 @@ img {
   left: 50%;
   width: auto;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #fff !important;
   letter-spacing: 3px;
+  display: none;
 }
 h2 {
   padding: 70px 0px 30px 0px;
@@ -129,9 +138,8 @@ h3 {
   .projectLaptopSize {
     position: relative;
     width: 24%;
-    border-right: 1px solid hsl(0, 0%, 20%);
     background-color: #bbb !important;
-    box-shadow: 0px 0px 10px 1px #fff;
+    /* box-shadow: 0px 0px 10px 1px #fff; */
     margin-top: 20px;
     border-radius: 3px;
   }

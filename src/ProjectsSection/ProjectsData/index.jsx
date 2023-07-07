@@ -13,17 +13,9 @@ function ProjectsData({
   gitUrl,
   url,
 }) {
-   const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
     <>
-      <div className="container mb-2">
-        <div
-          className={`container ${
-            lightMode == true
-              ? "projectsSection"
-              : "projectsSection projectsSectionLight"
-          }`}
-        >
+     
           <div className="projectLaptopSize text-center">
             <LazyLoad offset={0}>
               <img
@@ -36,77 +28,7 @@ function ProjectsData({
               <h3 className="urltext text-700">{title}</h3>
             </div>
           </div>
-          <div className="projectLaptopSize text-center">
-            <LazyLoad offset={0}>
-              <img
-                className="animate__animated animate__fadeInLeftBig"
-                src={image1}
-              />
-            </LazyLoad>
-            <span></span>
-            <div className="urltextOnHover animate__animated animate__zoomIn">
-              <h3 className="urltext text-700">{title}</h3>
-            </div>
-          </div>
-          <div className="projectLaptopSize text-center">
-            <LazyLoad offset={0}>
-              <img
-                className="animate__animated animate__fadeInLeftBig"
-                src={image1}
-              />
-            </LazyLoad>
-            <span></span>
-            <div className="urltextOnHover animate__animated animate__zoomIn">
-              <h3 className="urltext text-700">{title}</h3>
-            </div>
-          </div>
-          <div className="projectLaptopSize text-center">
-            <LazyLoad offset={0}>
-              <img
-                className="animate__animated animate__fadeInLeftBig"
-                src={image1}
-              />
-            </LazyLoad>
-            <span></span>
-            <div className="urltextOnHover animate__animated animate__zoomIn">
-              <h3 className="urltext text-700">{title}</h3>
-            </div>
-          </div>
-          <div className="projectMobileSize text-center">
-            {/* <LazyLoad offset={0}>
-              <img
-                className="animate__animated animate__fadeInRightBig"
-                src={image2}
-              />
-            </LazyLoad> */}
-            {/* <div className="urltextOnHover animate__animated animate__zoomIn">
-              <div className="urltext">
-                <a href={gitUrl} target="_blank">
-                  {desText1 == "" ? (
-                    ""
-                  ) : (
-                    <button className="p-1 projectsButton">
-                      <i className="bi bi-github"></i> {desText1}
-                    </button>
-                  )}
-                </a>
-                <span>{desText2}</span>
-                <span>
-                  <a href={url} target="_blank">
-                    {urltext == "" ? (
-                      ""
-                    ) : (
-                      <button className="p-1 projectsButton">
-                        <i className="bi bi-link-45deg"></i> {urltext}
-                      </button>
-                    )}
-                  </a>
-                </span>
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </div>
+          
     </>
   );
 }

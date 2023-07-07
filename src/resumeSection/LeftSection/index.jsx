@@ -6,13 +6,12 @@ import IntButton from "./Button-int";
 function LeftSection() {
   //################## Redux  ##########################const Id = useSelector((state) => state.ButtonDes.Id);
   const Language = useSelector((state) => state.LanChange.Language);
-  const lightMode = useSelector((state) => state.LightMode.lightMode);
   //#####################################################
 
   return (
     <>
       <div className="leftthree">
-        <p className={`text-center ${lightMode == true ? "text-white" : "text-black"}`}>
+        <p className={`text-center`}>
           MENU <i className="bi bi-arrow-down"></i>
         </p>
         {Language == false

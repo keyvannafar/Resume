@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 import "./App.css";
 import Home from "./Home/Home";
+import LoginForm from "./LoginForm/index.jsx";
 import Navbar from "./layout/Navbar"
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -17,7 +18,8 @@ function App() {
         <Provider store={store}>
             <Navbar />
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/Login" element={<LoginForm />} />
             </Routes>
             <Footer />
             <BackToTop />

@@ -3,13 +3,10 @@ import "./Slidersection.css";
 import { useSelector } from "react-redux";
 import Slider from "../Slider/Slider";
 function Slidersection() {
-  const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
     <div className="slider-bg">
       <div
-        className={`d-flex ${
-          lightMode == true ? "slider-flexbox" : "slider-flexbox bg-white"
-        }`}
+        className="d-flex slider-flexbox"
         id="slider"
       >
         <div className="slider-right">

@@ -4,13 +4,10 @@ import RightSection from "./RightSection";
 import { useSelector } from "react-redux/es/exports";
 function SectionResume() {
   const Language = useSelector((state) => state.LanChange.Language);
-  const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
-    <div className={`${lightMode == true ? " bg-white" : "bg-white"}`}>
+    <div>
       <div
-        className={`${
-          lightMode == true ? "full-width bg-white" : "full-width"
-        }`}
+        className="full-width"
         id="about"
       >
         <h2 className="text-center about-header mb-4">
@@ -22,15 +19,11 @@ function SectionResume() {
         </h2>
         <div>
           <div
-            className={`d-flex ${
-              lightMode == true
-                ? "sectionthree"
-                : "sectionthree bg-white shadow-none"
-            } `}
+            className="d-flex sectionthree"
           >
-            <div className="threeleft">
+            {/* <div className="threeleft">
               <LeftSection />
-            </div>
+            </div> */}
             <div className="threeright">
               <RightSection />
             </div>

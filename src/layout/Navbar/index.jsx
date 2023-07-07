@@ -12,23 +12,21 @@ import NavbarText from "./dataNavbar";
 function Navbar() {
   const setLanguage = useDispatch();
   const [ltMode, setltMode] = useState(false);
-  const setLightMode = useDispatch();
   const [Lan, setLan] = useState(false);
   const setScroll = useDispatch();
   const Language = useSelector((state) => state.LanChange.Language);
   const Scroll = useSelector((state) => state.OnScroll.Scroll);
   const MenuMob = useSelector((state) => state.ToggleMenu.MenuMob);
+  const loginMode = useSelector((state) => state.LoginMode.loginMode);
+  const setLog = useDispatch();
   function toggleLan() {
     setLan(!Lan);
     Lan == false
       ? setLanguage({ type: "Englisch" })
       : setLanguage({ type: "Deutsch" });
   }
-  function LightMode() {
-    setltMode(!ltMode);
-    ltMode == false
-      ? setLightMode({ type: "LightModeOff" })
-      : setLightMode({ type: "LightModeOn" });
+  function LogOut(){
+    setLog({ type: "falseData" });
   }
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -73,24 +71,27 @@ function Navbar() {
             }`}
             id="navbarNavAltMarkup"
           >
-            <div className="navbar-nav">    
-                {Language == false
-                  ? NavData.map((item) => (
-                      <NavbarText key={item.id} {...item} />
-                    ))
-                  : NavDataEnglisch.map((item) => (
-                      <NavbarText key={item.id} {...item} />
-                    ))}
+            <div className="navbar-nav">
+              {Language == false
+                ? NavData.map((item) => <NavbarText key={item.id} {...item} />)
+                : NavDataEnglisch.map((item) => (
+                    <NavbarText key={item.id} {...item} />
+                  ))}
             </div>
           </div>
-          <div>
-            <i className="bi bi-moon-stars"></i>{" "}
-            <label className="switch">
-              <input type="checkbox" />
-              <span className="slider round" onClick={LightMode}></span>
-            </label>{" "}
-            <i className="bi bi-brightness-high"></i>
-          </div>
+          {loginMode == 1 ? (
+            <div>
+              <Link to="/" className="text-black" onClick={LogOut}>
+                Log Out
+              </Link>
+            </div>
+          ) : (
+            <div>
+              <Link to="/Login" className="text-black">
+                Login
+              </Link>
+            </div>
+          )}
           <div className="dropdown">
             <button className="dropbtn">
               {Lan == true ? (

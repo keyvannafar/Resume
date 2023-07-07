@@ -8,12 +8,10 @@ import NavbarText from "../Navbar/dataNavbar";
 import { useSelector } from "react-redux";
 function Footer() {
   const Language = useSelector((state) => state.LanChange.Language);
-  const lightMode = useSelector((state) => state.LightMode.lightMode);
+  // const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
     <footer
-      className={`py-3 my-4 footer ${
-        lightMode == true ? "bg-black" : "bg-white"
-      }`}
+      className={`py-3 my-4 footer`}
       id="Contact"
     >
       <div className="container">
@@ -23,9 +21,7 @@ function Footer() {
               <h5>Links</h5>
               <ul className="nav flex-column">
                 <ul
-                  className={`nav footer-Nav ${
-                    lightMode == false ? "footerNavLight" : ""
-                  }`}
+                  className={`nav footer-Nav`}
                 >
                   {Language == false
                     ? NavData.map((item) => (
@@ -52,9 +48,7 @@ function Footer() {
             <div className="col-6 col-md-3 mb-3">
               <h5>Adress </h5>
               <ul
-                className={` flex-column ${
-                  lightMode == true ? "nav" : "nav navLight"
-                }`}
+                className={` flex-column`}
               >
                 <li className="nav-item mb-2">
                   <span>

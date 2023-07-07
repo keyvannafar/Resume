@@ -9,13 +9,50 @@
     position: relative;
     padding: 70px 10px;
 }
+h3{
+    color: #000 !important;
+}
 .text-parallax{
     position: relative;
     text-align: center;
     color: #beb7b7;
 }
+.docSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.docButton:hover{
+    box-shadow: 0px 0px 0px 0px #acabab;
+    /* background-color: #e3e2e2; */
+    transition-duration: 0.5s;
+}
+.docButton:hover span a{
+    color: #0e0e0e !important;
+    border-bottom: 1px solid black;
+    transition-duration: 0.5s;
+}
+.docButton{
+    border: none !important;
+    border-radius: 3px !important;
+    padding: 10px;
+    width: 25%;
+    box-shadow: 0px 0px 5px 2px #acabab;
+}
+
 .text-parallax h3{
     font-size: 30px !important;
+}
+.text-parallax a{
+    font-size: 18px;
+    color: #444444 !important;
+}
+.textDoc{
+    color: #7d7d7d;
+}
+.text-parallax a i{
+    font-size: 18px;
+    color: #ff3a33 !important;
 }
 .parallax-button{
     align-self: center;
@@ -35,7 +72,8 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.475);
+    background-color: rgba(152, 152, 152, 0.797);
+    background-color: #dbc596f5;
 }
 .loginForm{
     padding: 5px;
@@ -55,11 +93,6 @@
 }
 .documents{
     text-align: left !important;
-}
-.docBotton:hover{
-    background-color: #ff6633;
-    color: #fff;
-    transition-duration: 0.3s;
 }
 .docBotton i{
     color: #000;
