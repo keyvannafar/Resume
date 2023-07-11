@@ -12,12 +12,12 @@ function NavbarText({ text, path, icon }) {
   return (
     <>
       <div>
-        <li>
+        <li className="border-none text-decoration-none">
           {" "}
           <a className={`nav-link p-0`} aria-current="page" href={path}>
             {icon} {text}
-          </a>        
-        </li>      
+          </a>
+        </li>
       </div>
     </>
   );

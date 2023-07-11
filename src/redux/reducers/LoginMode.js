@@ -1,5 +1,5 @@
 const initstate = {
-  loginMode: 0,
+  loginMode: 3,
 };
 
 const LoginMode = (state = initstate, action) => {
@@ -18,7 +18,12 @@ const LoginMode = (state = initstate, action) => {
       ...state,
       loginMode: (state.loginMode = 2),
     };
-  }
+  } else if (action.type === "startLog") {
+    return {
+      ...state,
+      loginMode: (state.loginMode = 3),
+    }
+  };
   {
     return state;
   }

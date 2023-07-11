@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     background-color: #fff;
-    z-index: 999 !important;
+    z-index: 0 !important;
     top: 0 !important;
 }
 .loginForm{
@@ -13,4 +13,21 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.btnLogin{
+    width: 100%;
+    background-color: #ff6633;
+    border: none;
+}
+.btnLogin:hover{
+    width: 100%;
+    background-color: #fa7a4f;
+    border: none;
+}
+.btnLogin:focus{
+    background-color: #ff6633;
+    border: none;
+}
+.warningLabel label{
+    color: red;
 }

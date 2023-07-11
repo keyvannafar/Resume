@@ -10,19 +10,14 @@ function Footer() {
   const Language = useSelector((state) => state.LanChange.Language);
   // const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
-    <footer
-      className={`py-3 my-4 footer`}
-      id="Contact"
-    >
+    <footer className={`py-3 my-4 footer`} id="Contact">
       <div className="container">
         <footer className="py-5">
           <div className="row">
             <div className="col-6 col-md-1 mb-3">
               <h5>Links</h5>
               <ul className="nav flex-column">
-                <ul
-                  className={`nav footer-Nav`}
-                >
+                <ul className={`nav footer-Nav`}>
                   {Language == false
                     ? NavData.map((item) => (
                         <>
@@ -33,7 +28,7 @@ function Footer() {
                       ))
                     : NavDataEnglisch.map((item) => (
                         <>
-                          <li className=" mb-2 w-100">
+                          <li className="mb-2 w-100">
                             <NavbarText key={item.id} {...item} />
                           </li>
                         </>
@@ -42,30 +37,26 @@ function Footer() {
                 <br />
               </ul>
             </div>
-
             <div className="col-1 col-md-1 mb-3"></div>
-
             <div className="col-6 col-md-3 mb-3">
               <h5>Adress </h5>
-              <ul
-                className={` flex-column`}
-              >
-                <li className="nav-item mb-2">
+              <ul className="flex-column footerAddress">
+                <li className="mb-2">
                   <span>
                     <i className="bi bi-geo-alt"></i> Frankfurt am Main
                   </span>
                 </li>
-                <li className="nav-item mb-2">
+                <li className="mb-2">
                   <span>60598 ,DE</span>
                 </li>
-                <li className="nav-item mb-2">
+                <li className="mb-2">
                   <span>
                     <i className="bi bi-phone-vibrate"></i> +49 178 712 3740
                   </span>
                 </li>
-                <li className="nav-item mb-2">
+                <li className="mb-2">
                   <span>
-                    <i className="bi bi-whatsapp"></i> +98 913 104 2684
+                    <i className="bi bi-whatsapp"></i> +49 178 712 3740
                   </span>
                 </li>
                 <li className="nav-item mb-2">
@@ -76,12 +67,10 @@ function Footer() {
                 </li>
               </ul>
             </div>
-
             <div className="col-md-6 offset-md-1 mb-3 p-0">
               <Contact />
             </div>
           </div>
-
           <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p className="copyright">
               © 2022, All rights reserved, M.M.Nafarzadeh

@@ -7,14 +7,12 @@ import Pdf1 from "./data/zeugnis.pdf";
 import "./Parralax.css";
 export default function Parallax() {
   
-  const [log, setLog] = useState();
+  
   const loginMode = useSelector((state) => state.LoginMode.loginMode);
   const Language = useSelector((state) => state.LanChange.Language);
   const [message, setMessage] = useState("");
   function LoginFunc(){
-    if (log == 1){
-
-    }
+    
   }
   // function zuruckToDoc() {
   //   setMessage("");
@@ -30,7 +28,7 @@ export default function Parallax() {
           <>
             <h3>Meine Dokumente</h3>
             <br />
-            <div className={`f ${log == 1 ? "d-none" : "d-block"}`}>
+            <div className={`f`}>
               <span className="textDoc">
                 Sie können die Dokumente zu meinem Arbeits- und
                 Ausbildungsverlauf einsehen
@@ -40,7 +38,7 @@ export default function Parallax() {
               <br />
               <div className="docSection">
                 <button onClick={LoginFunc} className="docButton">
-                  {log == 1 ? (
+                  {loginMode == 1 ? (
                     <span>
                       <a href={Pdf} target="_blank">
                         <i className="bi bi-file-earmark-pdf-fill"></i>{" "}
@@ -202,27 +200,7 @@ export default function Parallax() {
           <>
             <h3>My Documents</h3>
             <br />
-            <div className={`${log == 1 ? "d-none" : "d-block"}`}>
-              <span>
-                You can download the documents to my work and View training
-                history by entering the password
-              </span>
-              <br />
-              <br />
-              <input
-                type="password"
-                name="email"
-                className="loginForm"
-                placeholder="password"
-                value={message}
-                // onChange={handlechange}
-              />
-              <br />
-              <br />
-              {/* <button className="parallax-button" onClick={Login}>
-                <i className="bi bi-hand-index-thumb"></i> Confirmation
-              </button> */}
-            </div>
+            
             {/* <div className="documents">
               {loginMode == 1 ? (
                 <>

@@ -26,7 +26,10 @@ function Navbar() {
       : setLanguage({ type: "Deutsch" });
   }
   function LogOut(){
-    setLog({ type: "falseData" });
+    setLog({ type: "startLog" });
+  }
+  function LogIn(){
+     setLog({ type: "startLog" });
   }
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -87,7 +90,7 @@ function Navbar() {
             </div>
           ) : (
             <div>
-              <Link to="/Login" className="text-black">
+              <Link to="/Login" className="text-black" onClick={LogIn}>
                 Login
               </Link>
             </div>

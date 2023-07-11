@@ -38,79 +38,65 @@ function LoginForm() {
   }
   return (
     <>
-      <div className="animate__animated animate__zoomIn cv-main" id="LoginForm">
-        <div className={`mainDta `}>
+      <div className="cv-main" id="LoginForm">
+        <div className={`mainDta`}>
           <div className="w-100">
-            <h4 className="col">
-              {/* {Language == false ? <span>Lebenslauf</span> : <span>CV</span>} */}
-            </h4>
             <div className="loginPage">
               <form className="loginForm">
-                <div class="form-outline mb-4">
+                <h4 className="col text-center">Bitte melden Sie sich an.</h4>
+                <br />
+                <div className="form-outline mb-4">
+                  <label className="form-label" for="form2Example1">
+                    Email address *
+                  </label>
                   <input
                     type="email"
                     id="form2Example1"
-                    class="form-control"
+                    className="form-control"
                     name="email"
-                    placeholder="password"
                     value={user}
                     onChange={handlechange}
                   />
-                  <label class="form-label" for="form2Example1">
-                    Email address
-                  </label>
                 </div>
 
-                <div class="form-outline mb-4">
+                <div className="form-outline mb-4">
+                  <label className="form-label" for="form2Example2">
+                    Password *
+                  </label>
                   <input
                     type="password"
                     id="form2Example2"
-                    class="form-control"
+                    className="form-control"
                     name="email"
-                    placeholder="password"
                     value={pass}
                     onChange={handlechangePass}
                   />
-                  <label class="form-label" for="form2Example2">
-                    Password
-                  </label>
                 </div>
 
-                <div class="row mb-4">
-                  <div class="col d-flex justify-content-center">
-                    <div class="form-check">
+                <div className="row mb-4">
+                  <div className="col d-flex justify-content-center">
+                    <div className="form-check warningLabel">
+                      {loginMode == 0 ? (
+                        <label className="form-label" for="form2Example1">
+                          One or two fields are empty!
+                        </label>
+                      ) : loginMode == 2 ? (
+                        <label className="form-label" for="form2Example1">
+                          The username or password is invalid!
+                        </label>
+                      ) : (
+                        ""
+                      )}
                     </div>
                   </div>
                 </div>
                 <button
                   type="button"
-                  class="btn btn-primary btn-block mb-4"
+                  className="btn btn-primary btn-block mb-4 btnLogin"
                   onClick={Login}
                 >
                   Sign in
                 </button>
-
-                <div class="text-center">
-                  <p>
-                    Not a member? <a href="#!">Register</a>
-                  </p>
-                  <p>or sign up with:</p>
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-facebook-f"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-google"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-twitter"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-github"></i>
-                  </button>
-                </div>
               </form>
             </div>
           </div>
