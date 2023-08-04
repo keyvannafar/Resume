@@ -1,9 +1,10 @@
 .skilsSection{
     background-color: #dbc596;
+    background-color: #fff;
     justify-content: space-around;
 }
 .bar{
-    background-color: #fff;
+    background-color: #dbc596;
     width: 40%;
 }
 .progress{
@@ -20,3 +21,8 @@
     color: #333333 !important;
     float: right !important;
 }
+@media screen and (max-width: 900px) {
+  .column {
+    width: 90%;
+  }
+} 

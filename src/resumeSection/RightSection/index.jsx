@@ -5,9 +5,9 @@ function Sectionthreeright() {
   return (
     <>
       <div id="lebenslauf"></div>
-      <div className="rightthree ">
+      {/* <div className="rightthree ">
         <CV />
-      </div>
+      </div> */}
     </>
   );
 }

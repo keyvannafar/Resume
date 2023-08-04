@@ -11,41 +11,30 @@ function MySkils() {
         </div>
         <div className="column">
           <div className="w-100">
-            {/* <ul className="w-100 p-0">
-              <ul className="w-100">
-                <li className="w-100"> */}
             <h6>
               Photoshop
               <span className="label">
-                49<em>%</em>
+                89<em>%</em>
               </span>
             </h6>
             <div className="bar w-100">
               <span className="progress" style={{ width: "89%" }}></span>
             </div>
             <br />
-            {/* </li>
-                <li> */}
             <h6>
-              3D Max
+              React Js
               <span className="label">
-                78<em>%</em>
+                50<em>%</em>
               </span>
             </h6>
             <div className="bar w-100">
-              <span className="progress" style={{ width: "99%" }}></span>
+              <span className="progress" style={{ width: "50%" }}></span>
             </div>
             <br />
-            {/* </li>
-              </ul>
-            </ul> */}
           </div>
         </div>
         <div class="column">
           <div class="progress_bars">
-            {/* <ul class="hover p-0">
-              <ul>
-                <li> */}
             <h6>
               CSS3
               <span class="label">
@@ -53,43 +42,33 @@ function MySkils() {
               </span>
             </h6>
             <div class="bar w-100">
-              <span class="progress" style={{ width: "49%" }}></span>
+              <span class="progress" style={{ width: "74%" }}></span>
             </div>
             <br />
-            {/* </li>
-                <li> */}
             <h6>
               HTML5
               <span class="label">
-                90<em>%</em>
+                85<em>%</em>
               </span>
             </h6>
             <div class="bar w-100">
-              <span class="progress" style={{ width: "59%" }}></span>
+              <span class="progress" style={{ width: "85%" }}></span>
             </div>
             <br />
-            {/* </li>
-              </ul>
-            </ul> */}
           </div>
         </div>
         <div class="column">
           <div class="progress_bars">
-            {/* <ul class="hover p-0">
-              <ul>
-                <li> */}
             <h6>
               Javascript / jQuery
               <span class="label">
-                89<em>%</em>
+                65<em>%</em>
               </span>
             </h6>
             <div class="bar w-100">
-              <span class="progress" style={{ width: "69%" }}></span>
+              <span class="progress" style={{ width: "65%" }}></span>
             </div>
             <br />
-            {/* </li>
-                <li> */}
             <h6>
               PHP
               <span class="label">
@@ -97,12 +76,9 @@ function MySkils() {
               </span>
             </h6>
             <div class="bar w-100">
-              <span class="progress" style={{ width: "99%" }}></span>
+              <span class="progress" style={{ width: "50%" }}></span>
             </div>
             <br /><br />
-            {/* </li>
-              </ul>
-            </ul> */}
           </div>
         </div>
       </div>

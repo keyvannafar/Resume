@@ -10,7 +10,7 @@ function LeftSection() {
 
   return (
     <>
-      <div className="leftthree">
+      <div className="leftthree" id="lebenslauf">
         <p className={`text-center`}>
           MENU <i className="bi bi-arrow-down"></i>
         </p>

@@ -8,7 +8,6 @@ import NavbarText from "../Navbar/dataNavbar";
 import { useSelector } from "react-redux";
 function Footer() {
   const Language = useSelector((state) => state.LanChange.Language);
-  // const lightMode = useSelector((state) => state.LightMode.lightMode);
   return (
     <footer className={`py-3 my-4 footer`} id="Contact">
       <div className="container">
@@ -71,7 +70,7 @@ function Footer() {
               <Contact />
             </div>
           </div>
-          <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top footerDown">
             <p className="copyright">
               © 2022, All rights reserved, M.M.Nafarzadeh
             </p>

@@ -2,23 +2,23 @@ export const NavData = [
   {
     id: 1,
     text: "HOME",
-    path: "#home",
+    path: "/",
     icon: <i className="bi bi-house-door"></i>,
   },
   {
     id: 2,
-    text: "PROJEKTE",
-    path: "#projects",
+    text: "ERFAHRUNG",
+    path: "#lebenslauf",
   },
   {
     id: 3,
-    text: "ÜBER UNS",
-    path: "#about",
+    text: "DOKUMENTE",
+    path: "#Dokumente",
   },
   {
     id: 4,
-    text: "KONTAKT",
-    path: "#Contact",
+    text: "PROJEKTE",
+    path: "#projects",
   },
 ];
 export const NavDataEnglisch = [

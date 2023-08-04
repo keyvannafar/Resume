@@ -21,9 +21,9 @@ export default function Parallax() {
   // }
  
   return (
-    <div className="parallax" id="Parallax">
+    <div className="parallax" id="Dokumente">
       <div className="parallaxBlur"></div>
-      <div className="text-parallax">
+      <div className="text-parallax container">
         {Language == false ? (
           <>
             <h3>Meine Dokumente</h3>

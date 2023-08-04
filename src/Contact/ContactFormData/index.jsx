@@ -182,9 +182,9 @@ function FormContact({
                 {buttonText}
               </button>
             </div>
-            <p className="text-center w-responsive mx-auto mt-1">
+            {/* <p className="text-center w-responsive mx-auto mt-1">
               {description}
-            </p>
+            </p> */}
           </form>
           <div className="status"></div>
         </section>

@@ -8,21 +8,18 @@ function NavbarText({ text, path, icon }) {
   const Scroll = useSelector((state) => state.OnScroll.Scroll);
   const [underMenu, setunderMenu] = useState(false);
   const setMenuMob = useDispatch();
+  function located(){
+    if (path !== "/"){ window.location.assign(path);} else {window.location.assign("#home")}
+  }
   return (
     <>
       <div id="home"></div>
       <li className="nav-item">
         <Link
-          to="/"
+          to={path}
           className={`${
             Scroll == 0 ? `nav-link` : `nav-link nav-linkOnScroll`
-          }`}
-          // aria-current="page"
-          // data-bs-toggle="collapse"
-          // data-bs-target="#navbarNavAltMarkup"
-          // aria-controls="navbarNavAltMarkup"
-          // aria-expanded="false"
-          // aria-label="Toggle navigation"
+          }`} onClick={located}
         >
           {icon} {text}
         </Link>

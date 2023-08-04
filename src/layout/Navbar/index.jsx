@@ -84,13 +84,21 @@ function Navbar() {
           </div>
           {loginMode == 1 ? (
             <div>
-              <Link to="/" className="text-black" onClick={LogOut}>
+              <Link
+                to="/"
+                className={`${Scroll == 1 ? `logIconOnscroll` : "logIcon"}`}
+                onClick={LogOut}
+              >
                 Log Out
               </Link>
             </div>
           ) : (
             <div>
-              <Link to="/Login" className="text-black" onClick={LogIn}>
+              <Link
+                to="/Login"
+                className={`${Scroll == 1 ? `logIconOnscroll` : "logIcon"}`}
+                onClick={LogIn}
+              >
                 Login
               </Link>
             </div>

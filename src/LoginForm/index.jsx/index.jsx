@@ -1,39 +1,26 @@
 import { useEffect, useState } from "react";
-import "./loginForm.css"
+import "./loginForm.css";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-
 function LoginForm() {
-  useEffect(()=>{
+  useEffect(() => {
     window.location.replace("#home");
-  })
-    const loginMode = useSelector((state) => state.LoginMode.loginMode);
-    const Language = useSelector((state) => state.LanChange.Language);
-    const [localLog, setLocalLog] = useState(false);
-    const [user, setUser] = useState("");
-    const [pass, setPass] = useState("");
-    
+  });
+  const loginMode = useSelector((state) => state.LoginMode.loginMode);
+  const Language = useSelector((state) => state.LanChange.Language);
+  // const [localLog, setLocalLog] = useState(false);
+  const [loginInfo, setLoginInfo] = useState({ User: "", Pass: "" });
   const setLog = useDispatch();
-  const [Pro, setPro] = useState(1);
-  function handlechange(e) {
-    setUser(e.target.value);
-  }
-  function handlechangePass(e) {
-    setPass(e.target.value);
-  }
+  // const [Pro, setPro] = useState(1);
   function Login() {
-    if (user == "" || pass == "") {
-      setLog({type: "empty"});
-    } else if (user == "web-dev" && pass == "web-dev") {
-      setLog({type: "trueData"});
-      window.history.replaceState(
-        null,
-        "",
-        "/"
-      );
+    if (loginInfo.User == "" || loginInfo.Pass == "") {
+      setLog({ type: "empty" });
+    } else if (loginInfo.User == "web-dev" && loginInfo.Pass == "web-dev") {
+      setLog({ type: "trueData" });
+      window.history.replaceState(null, "", "/");
     } else {
-      setLog({type: "falseData"});
+      setLog({ type: "falseData" });
     }
   }
   return (
@@ -50,15 +37,16 @@ function LoginForm() {
                     Email address *
                   </label>
                   <input
-                    type="email"
+                    type="userName"
                     id="form2Example1"
                     className="form-control"
-                    name="email"
-                    value={user}
-                    onChange={handlechange}
+                    name="User"
+                    // value={loginInfo.User}
+                    onChange={(e) =>
+                      setLoginInfo({ ...loginInfo, User: e.target.value })
+                    }
                   />
                 </div>
-
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form2Example2">
                     Password *
@@ -67,12 +55,13 @@ function LoginForm() {
                     type="password"
                     id="form2Example2"
                     className="form-control"
-                    name="email"
-                    value={pass}
-                    onChange={handlechangePass}
+                    name="User"
+                    // value={pass}
+                    onChange={(e) =>
+                      setLoginInfo({ ...loginInfo, Pass: e.target.value })
+                    }
                   />
                 </div>
-
                 <div className="row mb-4">
                   <div className="col d-flex justify-content-center">
                     <div className="form-check warningLabel">

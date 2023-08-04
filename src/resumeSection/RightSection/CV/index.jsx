@@ -6,7 +6,7 @@ function CV() {
   const personalId = useSelector((state) => state.ButtonDes.personalId);
   const Language = useSelector((state) => state.LanChange.Language);
   return (
-    <div className="animate__animated animate__fadeInRightBig cv-main">
+    <div className="animate__animated animate__fadeInRightBig cv-main" id="lebenslauf">
       <div className={`mainDta`}>
         <div className="w-100">
           <h4 className="col">

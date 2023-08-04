@@ -15,7 +15,7 @@
   border-right: none;
 }
 .nav-linkOnScroll{
-  color: #333333 !important;
+  color: #fff !important;
 }
 ul li  a{
   text-decoration: none !important;
@@ -33,7 +33,7 @@ ul li  a{
   border-radius: 3px;
 }
 .headerIconOnScroll i{
-  color: #333333 !important;
+  color: #fff !important;
 }
 .headerIcon i{
   color: #333333 !important;
@@ -57,6 +57,12 @@ ul li  a{
 }
 .light{
   box-shadow: 0px 0px 10px 0.1px #a09f9f;
+}
+.logIcon{
+  color: #000 !important;
+}
+.logIconOnscroll{
+  color: #fff !important;
 }
 .mainnavOnScroll{
   background-color: #4b4a4af0;

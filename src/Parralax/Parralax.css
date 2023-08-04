@@ -24,7 +24,6 @@ h3{
 }
 .docButton:hover{
     box-shadow: 0px 0px 0px 0px #acabab;
-    /* background-color: #e3e2e2; */
     transition-duration: 0.5s;
 }
 .docButton:hover span a{
@@ -48,7 +47,7 @@ h3{
     color: #444444 !important;
 }
 .textDoc{
-    color: #7d7d7d;
+    color: #fff;
 }
 .text-parallax a i{
     font-size: 18px;
@@ -74,6 +73,7 @@ h3{
     height: 100%;
     background-color: rgba(152, 152, 152, 0.797);
     background-color: #dbc596f5;
+    background-color: #7395ae;
 }
 .loginForm{
     padding: 5px;
@@ -115,5 +115,10 @@ h3{
         background-repeat: no-repeat;
         padding: 70px 5px;
         width: 100%;
-    }
+    }  
+  .docButton {
+    width: 90%; 
+    margin-bottom: 5px;
+
+} 
 }

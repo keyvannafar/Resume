@@ -16,7 +16,8 @@
 }
 .btnLogin{
     width: 100%;
-    background-color: #ff6633;
+    background-color: #dbc596;
+    color: #000;
     border: none;
 }
 .btnLogin:hover{
