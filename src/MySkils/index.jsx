@@ -1,12 +1,20 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./myskils.css"
 function MySkils() {
+  const Language = useSelector((state) => state.LanChange.Language);
   return (
     <>
       <div className="skilsSection d-flex flex-wrap">
         <div className="w-100">
           <div>
-            <h2 className="title text-center">My skills</h2>
+            <h2 className="title text-center">
+              {Language == false ? (
+                <span>Fähigkeiten</span>
+              ) : (
+                <span>Skils</span>
+              )}
+            </h2>
           </div>
         </div>
         <div className="column">
@@ -14,21 +22,21 @@ function MySkils() {
             <h6>
               Photoshop
               <span className="label">
-                89<em>%</em>
+                85<em>%</em>
               </span>
             </h6>
             <div className="bar w-100">
-              <span className="progress" style={{ width: "89%" }}></span>
+              <span className="progress" style={{ width: "85%" }}></span>
             </div>
             <br />
             <h6>
               React Js
               <span className="label">
-                50<em>%</em>
+                60<em>%</em>
               </span>
             </h6>
             <div className="bar w-100">
-              <span className="progress" style={{ width: "50%" }}></span>
+              <span className="progress" style={{ width: "60%" }}></span>
             </div>
             <br />
           </div>
@@ -38,11 +46,11 @@ function MySkils() {
             <h6>
               CSS3
               <span class="label">
-                74<em>%</em>
+                75<em>%</em>
               </span>
             </h6>
             <div class="bar w-100">
-              <span class="progress" style={{ width: "74%" }}></span>
+              <span class="progress" style={{ width: "75%" }}></span>
             </div>
             <br />
             <h6>
@@ -78,7 +86,8 @@ function MySkils() {
             <div class="bar w-100">
               <span class="progress" style={{ width: "50%" }}></span>
             </div>
-            <br /><br />
+            <br />
+            <br />
           </div>
         </div>
       </div>

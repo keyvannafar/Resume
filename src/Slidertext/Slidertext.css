@@ -6,10 +6,11 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: #7395ae;
+    background-color: #647494;
     letter-spacing: 1px;
     padding: 0px 10px;
     z-index: 999 !important;
-    border-top: 1px solid #7395ae;
+    border-top: 1px solid #647494;
 }
 .slidertext-Light{
     background-color: #ffffff;

@@ -15,7 +15,7 @@ function NavbarText({ text, path, icon }) {
         <li className="border-none text-decoration-none">
           {" "}
           <a className={`nav-link p-0`} aria-current="page" href={path}>
-            {icon} {text}
+            {text}
           </a>
         </li>
       </div>

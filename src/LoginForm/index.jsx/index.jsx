@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./loginForm.css";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-
 function LoginForm() {
   useEffect(() => {
     window.location.replace("#home");
@@ -30,7 +29,13 @@ function LoginForm() {
           <div className="w-100">
             <div className="loginPage">
               <form className="loginForm">
-                <h4 className="col text-center">Bitte melden Sie sich an.</h4>
+                <h4 className="col text-center">
+                  {Language == false ? (
+                    <span>Bitte melden Sie sich an.</span>
+                  ) : (
+                    <span>Please sign in.</span>
+                  )}
+                </h4>
                 <br />
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form2Example1">
