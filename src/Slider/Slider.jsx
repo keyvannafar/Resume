@@ -9,7 +9,6 @@ function Slider() {
       data-bs-ride="carousel"
     >
       <div className="carousel-indicators">
-        
       </div>
       <div className="carousel-inner ">
         <div className="carousel-item active">

@@ -6,15 +6,14 @@ function Slidertext() {
   return (
     <>
       <div className="slidertext">
-        <h1 className="fade_h1">M.M.Nafarzadeh</h1>
+        <h1 className="fade_h1 text-white">M.M.Nafarzadeh</h1>
         <br />
         <br />
         {Language == false ? (
           <div>
             <p className="fade_text_slider">
               <i className="bi bi-check-lg"></i> Einige Programmiersprachen für
-              die
-              <b>Website-Entwicklung</b>
+              die <b>Website-Entwicklung</b>
             </p>
             <p className="fade_text_slider">
               <i className="bi bi-check-lg"></i> Mein Lebenslauf und meine

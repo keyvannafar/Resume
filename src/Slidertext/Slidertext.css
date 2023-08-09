@@ -5,12 +5,13 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #7395ae;
     background-color: #647494;
+    background-color: #0a1f44;
     letter-spacing: 1px;
     padding: 0px 10px;
     z-index: 999 !important;
     border-top: 1px solid #647494;
+    border-top: 1px solid #0a1f44;
 }
 .slidertext-Light{
     background-color: #ffffff;
@@ -21,7 +22,6 @@
 }
 h1{
     color: #333333;
-    border-bottom: px solid #ff6600;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: inline-block;
     padding: 3px;

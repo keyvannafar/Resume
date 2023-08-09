@@ -2,13 +2,15 @@
     background-color: #dbc596;
     background-color: #fff;
     justify-content: space-around;
+    
 }
 .bar{
     background-color: #dbc596;
+    background-color: #bbb;
     width: 40%;
 }
 .progress{
-    background-color: #333333 !important;
+    background-color: #0a1f44 !important;
     border-radius: 0px !important;
 }
 .column{

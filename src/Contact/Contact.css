@@ -42,11 +42,11 @@
     padding: 10px 0px;
 }
 .contact-btn{
-    background-color: #dbc596 !important;
+    background-color: #bbb !important;
     color: #000;
     border: none;
     min-width: 150px;
-    font-weight: bold;
+   
     box-shadow: none !important;
 }
 .contact-btn:hover{

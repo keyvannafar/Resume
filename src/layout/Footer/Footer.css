@@ -6,7 +6,7 @@
   position: relative;
   margin-top: 0px !important;
   padding-top: 50px !important;
-  background-color: #bbb; 
+  background-color: #0a1f44;; 
   border-top: 3px solid #7395ae;
 }
 .navLight span {
@@ -16,23 +16,23 @@
   border-top: 3px solid #7395ae !important;
 }
 .footer-Nav a {
-  color: #333333 !important;
+  color: #bbb !important;
   padding: 0px 0px 0px 0px !important;
   display: inline-block !important;
   font-size: 14px;
 }
 .footerNavLight a {
-  color: #0c0c0c !important;
+  color: #ebe7e7 !important;
 }
 
 li span {
-  color: #333333 !important;
+  color: #bbb !important;
 }
 h5 {
-  color: #333333 !important;
+  color: #fff !important;
 }
 .copyright {
-  color: rgb(61, 61, 61);
+  color: #bbb;
 }
 i:hover {
   color: #ff6633;
@@ -45,7 +45,7 @@ li{
     padding-left: 0px !important;
 }
 .footerAddress i{
-    color: rgb(26, 25, 25);
+    color: #bbb;
 }
 @media only screen and (max-width: 600px) {
   .footer {

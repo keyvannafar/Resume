@@ -21,7 +21,7 @@ export default function Parallax() {
       <div className="text-parallax container">
         {Language == false ? (
           <>
-            <h3>Meine Dokumente</h3>
+            <h3 className="text-white">Meine Dokumente</h3>
             <br />
             <div className={`f`}>
               <span className="textDoc">
